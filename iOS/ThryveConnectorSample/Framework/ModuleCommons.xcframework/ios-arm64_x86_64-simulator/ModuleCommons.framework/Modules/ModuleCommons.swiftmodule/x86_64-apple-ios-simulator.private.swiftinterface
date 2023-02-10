@@ -1,0 +1,254 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ModuleCommons
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CoreData
+import CoreSDK
+import Foundation
+@_exported import ModuleCommons
+import Swift
+import _Concurrency
+import _StringProcessing
+extension CoreSDK.NetworkClient {
+  final public func putEpoch(source: ModuleCommons.Source, values: [ModuleCommons.EpochValue], completionHandler: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  final public func putDaily(source: ModuleCommons.Source, values: [ModuleCommons.DailyValue], completionHandler: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  final public func deleteDataSource(source: ModuleCommons.Source, completionHandler: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  final public func postDataSource(source: ModuleCommons.Source, completionHandler: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  public static func make(with credentials: CoreSDK.Preferences.Credentials) -> CoreSDK.NetworkClient
+}
+public struct EpochPayload : ModuleCommons.PayloadProtocol {
+  public struct Value : Swift.Codable {
+    public init(_ value: ModuleCommons.EpochValue)
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public let dataSource: Swift.Int
+  public var data: [ModuleCommons.EpochPayload.Value]
+  public init(_ dataSource: ModuleCommons.Source, _ data: [ModuleCommons.EpochPayload.Value])
+  public typealias Payload = [ModuleCommons.EpochPayload.Value]
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public protocol ReporterProtocol {
+  associatedtype Client : CoreSDK.NetworkClient
+  var networkClient: Self.Client { get }
+}
+@objc @_inheritsConvenienceInitializers final public class RecognitionValue : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+public enum ServiceError : Swift.Error {
+  case noServiceFound(_: Swift.String = "Service is not supported")
+}
+public enum InvalidTypeError : Swift.Error {
+  case unknownValueType(_: Swift.String = "value type is not supported")
+}
+public enum InvalidPayloadError : Swift.Error {
+  case invalidPayload(Swift.String)
+}
+public enum InvalidValueError : Swift.Error {
+  case invalidValue(Swift.String)
+}
+public protocol PayloadProtocol : CoreSDK.ValueProtocol {
+  var dataSource: Swift.Int { get }
+}
+extension Foundation.NSNotification.Name {
+  public static let newAccessToken: Foundation.Notification.Name
+  public static let onWriteRACP: Foundation.Notification.Name
+}
+@objc(Source) public enum Source : Swift.Int {
+  case apple = 5
+  case thryve = 9
+  case iSens = 23
+  case bBraun = 35
+  case rocheAccuChek = 36
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct Details : Swift.Codable {
+  public enum Generation : Swift.String {
+    case smartphone
+    case tracker
+    case thirdParty
+    case manualEntry
+    case manualMeasurement
+    case automatedMeasurement
+    case calculation
+    case medicalGrade
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Trustworthiness : Swift.String {
+    case plausible
+    case verifiedFromDeviceSource
+    case verifiedFromUser
+    case verifiedFromExternalSource
+    case unlikely
+    case implausible
+    case unfavorableMeasurementContext
+    case insufficientDatabase
+    case doubtFromDeviceSource
+    case doubtFromUser
+    case doubtFromExternalSource
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum UserReliability : Swift.String {
+    case automaticallyIdentified
+    case manuallyIdentified
+    case confirmed
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public let generation: Swift.String?
+  public var trustworthiness: Swift.String?
+  public var medicalGrade: Swift.Bool?
+  public let userReliability: Swift.String?
+  public let chronologicalExactness: Swift.Int?
+  public let timezoneOffset: Swift.Int?
+  public init(generation: ModuleCommons.Details.Generation? = nil, trustworthiness: ModuleCommons.Details.Trustworthiness? = nil, medicalGrade: Swift.Bool? = nil, userReliability: ModuleCommons.Details.UserReliability? = nil, chronologicalExactness: Swift.Int? = nil, timezoneOffset: Swift.Int? = nil)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension ModuleCommons.RecognitionValue {
+  @nonobjc final public class func fetchRequest() -> CoreData.NSFetchRequest<ModuleCommons.RecognitionValue>
+  @objc @NSManaged dynamic final public var booleanValue: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic final public var dateValue: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic final public var doubleValue: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic final public var longValue: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic final public var stringValue: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic final public var thryveDataSource: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic final public var thryveType: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic final public var start: Foundation.Date {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic final public var end: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic final public var accessToken: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic final public var valueType: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+}
+@objc(Service) public enum Service : Swift.Int {
+  case steps = 0, activity, location, analytics, healthKit, bloodGlucose
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension ModuleCommons.Service {
+  public static func getLastUpload(_ service: ModuleCommons.Service) -> Foundation.TimeInterval
+  public static func setLastUpload(_ service: ModuleCommons.Service)
+}
+public protocol ServiceClientProtocol : AnyObject {
+  associatedtype Reporter : ModuleCommons.ReporterProtocol
+  var reporter: Self.Reporter { get }
+  func start(completionHandler: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  func process(completionHandler: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  func stop(completionHandler: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  func isEnabled() -> Swift.Bool
+}
+public protocol CommonsProtocol : AnyObject {
+  associatedtype Service
+  func isEnabled(_ service: Self.Service) -> Swift.Bool
+}
+open class ServiceClient {
+  public init()
+  public func set(enabled: Swift.Bool, source: ModuleCommons.Service)
+  public func isEnabled(service: ModuleCommons.Service) -> Swift.Bool
+  @objc deinit
+}
+public struct DailyValue {
+  public let type: CoreSDK.Daily
+  public let day: Foundation.Date
+  public let value: Any
+  public init(type: CoreSDK.Daily, day: Foundation.Date, value: Any)
+}
+extension ModuleCommons.DailyValue : Swift.Equatable {
+  public static func == (lhs: ModuleCommons.DailyValue, rhs: ModuleCommons.DailyValue) -> Swift.Bool
+}
+public struct DailyPayload {
+  public let dataSource: Swift.Int
+  public var data: [ModuleCommons.DailyPayload.Value]
+  public init(_ dataSource: ModuleCommons.Source, _ data: [ModuleCommons.DailyPayload.Value])
+}
+extension ModuleCommons.DailyPayload : ModuleCommons.PayloadProtocol {
+  public struct Value : Swift.Codable {
+    public init(_ value: ModuleCommons.DailyValue)
+    public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public typealias Payload = [ModuleCommons.DailyPayload.Value]
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct EpochValue {
+  public let type: CoreSDK.Intraday
+  public let start: Foundation.Date
+  public let end: Foundation.Date?
+  public let value: Any
+  public let details: ModuleCommons.Details?
+  public var payload: ModuleCommons.EpochPayload.Value {
+    get
+  }
+  public init(type: CoreSDK.Intraday, start: Foundation.Date, end: Foundation.Date?, value: Any, details: ModuleCommons.Details?)
+}
+extension ModuleCommons.EpochValue : Swift.Equatable {
+  public static func == (lhs: ModuleCommons.EpochValue, rhs: ModuleCommons.EpochValue) -> Swift.Bool
+}
+extension ModuleCommons.Source : Swift.Equatable {}
+extension ModuleCommons.Source : Swift.Hashable {}
+extension ModuleCommons.Source : Swift.RawRepresentable {}
+extension ModuleCommons.Details.Generation : Swift.Equatable {}
+extension ModuleCommons.Details.Generation : Swift.Hashable {}
+extension ModuleCommons.Details.Generation : Swift.RawRepresentable {}
+extension ModuleCommons.Details.Trustworthiness : Swift.Equatable {}
+extension ModuleCommons.Details.Trustworthiness : Swift.Hashable {}
+extension ModuleCommons.Details.Trustworthiness : Swift.RawRepresentable {}
+extension ModuleCommons.Details.UserReliability : Swift.Equatable {}
+extension ModuleCommons.Details.UserReliability : Swift.Hashable {}
+extension ModuleCommons.Details.UserReliability : Swift.RawRepresentable {}
+extension ModuleCommons.Service : Swift.Equatable {}
+extension ModuleCommons.Service : Swift.Hashable {}
+extension ModuleCommons.Service : Swift.RawRepresentable {}

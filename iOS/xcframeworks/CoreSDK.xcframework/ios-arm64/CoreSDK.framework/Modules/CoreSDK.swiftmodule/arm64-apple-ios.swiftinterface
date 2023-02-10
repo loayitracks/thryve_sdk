@@ -1,0 +1,939 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name CoreSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import CoreSDK
+import Foundation
+import LocalAuthentication
+import Security
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+@objc(ConnectedSource) final public class ConnectedSource : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let dataSource: Swift.Int
+  @objc final public let connectedAt: Swift.String
+  public init(dataSource: Swift.Int, connectedAt: Swift.String)
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension Foundation.Data {
+  public var string: Swift.String? {
+    get
+  }
+  public func decrypted(with key: Swift.String) throws -> Foundation.Data
+}
+final public class Coder {
+  public init()
+  final public func decode<T>(from data: Foundation.Data?, type: T.Type) throws -> T where T : Swift.Decodable
+  final public func encode<T>(data: T) throws -> Swift.String where T : Swift.Encodable
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Logger {
+  public enum Verbosity {
+    case ERROR
+    case WARN
+    case DEBUG
+    case INFO
+    public static func == (a: CoreSDK.Logger.Verbosity, b: CoreSDK.Logger.Verbosity) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static func initialize(isEnabled: Swift.Bool, reporting: Swift.Bool, verbosity: CoreSDK.Logger.Verbosity)
+  public static func e(_ message: Any?, file: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  public static func w(_ message: Any?, file: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  public static func d(_ message: Any?, file: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  public static func i(_ message: Any?, file: Swift.String = #file, line: Swift.Int = #line, function: Swift.String = #function)
+  @objc deinit
+}
+public enum Intraday : Swift.RawRepresentable, Swift.CaseIterable {
+  case steps
+  case coveredDistance
+  case floorsClimbed
+  case burnedCalories
+  case activeBurnedCalories
+  case charge
+  case doffed
+  case sleep
+  case rest
+  case active
+  case walk
+  case run
+  case bike
+  case coveredDistanceActive
+  case coveredDistanceActiveManual
+  case coveredDistanceBike
+  case coveredDistanceBikeManual
+  case coveredDistanceWalk
+  case coveredDistanceWalkManual
+  case transport
+  case activityIntensity
+  case latitude
+  case longitude
+  case activityType
+  case activityTypeDetail1
+  case activityTypeDetail2
+  case sleepState
+  case sleepInBed
+  case sleepDeep
+  case sleepAwake
+  case sleepIntensity
+  case sleepLight
+  case sleepREM
+  case hearRate
+  case rmssd
+  case atrialFibrillationDetection
+  case respirationRate
+  case heartRateResting
+  case bloodOxygen
+  case bodyTemperature
+  case waistCircumference
+  case bmi
+  case weight
+  case height
+  case bloodPressureSystolic
+  case bloodPressureDiastolic
+  case vo2max
+  case bloodGlucose
+  case consumedCalories
+  case consumedCarbohydrates
+  case consumedFiber
+  case consumedSugar
+  case consumedFat
+  case consumedSaturatedFat
+  case consumedProtein
+  case consumedVitaminA
+  case consumedVitaminB1
+  case consumedVitaminB2
+  case consumedVitaminB3
+  case consumedVitaminB5
+  case consumedVitaminB6
+  case consumedVitaminB12
+  case consumedVitaminC
+  case consumedVitaminD
+  case consumedVitaminE
+  case consumedVitaminK
+  case consumedCalcium
+  case consumedIron
+  case consumedMagnesium
+  case consumedPhosphorus
+  case consumedPotassium
+  case consumedSodium
+  case consumedZinc
+  case consumedIodine
+  case consumedWater
+  case sexualEvent
+  case sicknessReport
+  case menstrualBleeding
+  case cycleLength
+  case pregnancyTest
+  case vaginalDischarge
+  case batteryLevel
+  case appUsageTime
+  case screenBrightness
+  case spo2
+  case peakFlowRate
+  case interbeatIntervals
+  case rawInterbeatIntervals
+  case audioExposureEvent
+  case environmentalAudioExposure
+  case headphoneAudioExposure
+  case rawEcgVoltage
+  case hrvScore
+  case electrodermalActivity
+  case tappingTestRegularity
+  case tappingTestCount
+  case tappingTestBalance
+  case tappingTestStrengthAverage
+  case tappingTestStrengthVariation
+  public var rawValue: CoreSDK.DataType {
+    get
+  }
+  public init?(rawValue: CoreSDK.DataType)
+  public typealias AllCases = [CoreSDK.Intraday]
+  public typealias RawValue = CoreSDK.DataType
+  public static var allCases: [CoreSDK.Intraday] {
+    get
+  }
+}
+extension Swift.String {
+  public static let empty: Swift.String
+  public var base64Encoded: Foundation.Data? {
+    get
+  }
+  public var base64Decoded: Swift.String? {
+    get
+  }
+  public var integer: Swift.Int? {
+    get
+  }
+  public var double: Swift.Double? {
+    get
+  }
+  public var boolean: Swift.Bool? {
+    get
+  }
+  public func date(format: Swift.String, timezone: Foundation.TimeZone = TimeZone.current) -> Foundation.Date?
+  public func dateWithLocale(format: Swift.String, timezone: Foundation.TimeZone? = TimeZone.current) -> Foundation.Date
+  public func encrypted(with key: Swift.String) throws -> Foundation.Data
+  public func decrypted(with key: Swift.String) throws -> Swift.String
+}
+@objc(AnomalyInformation) final public class AnomalyInformation : ObjectiveC.NSObject, Swift.Codable {
+  final public let enabledEpoch: Swift.Bool
+  public init(enabledEpoch: Swift.Bool)
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc(CoreWebViewDelegate) public protocol CoreWebViewDelegate : ObjectiveC.NSObjectProtocol {
+  @objc var connector: CoreSDK.CoreConnector? { get set }
+  @objc var connection: Swift.Bool { get set }
+  @objc var instantRevoke: Swift.Bool { get set }
+  @objc var source: CoreSDK.Tracker? { get set }
+  @objc func webView(_ webView: WebKit.WKWebView, source: CoreSDK.Tracker?, connected: Swift.Bool, hasSocialLoginError: Swift.Bool, error: Swift.Error?)
+}
+@objc(UserInformation) final public class UserInformation : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let authenticationToken: Swift.String?
+  @objc final public let accessToken: Swift.String?
+  @objc final public let partnerUserID: Swift.String?
+  final public let height: Swift.Int?
+  final public let weight: Swift.Double?
+  @objc final public let birthdate: Swift.String?
+  @objc final public let gender: Swift.String?
+  @objc final public let postalCode: Swift.String?
+  @objc final public let connectedSources: [CoreSDK.ConnectedSource]?
+  @objc final public func getHeight() -> Swift.Int
+  @objc final public func getWeight() -> Swift.Double
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc(QuestionnaireValue) final public class QuestionnaireValue : ObjectiveC.NSObject, CoreSDK.ValueProtocol {
+  @objc(QuestionnairePayload) final public class QuestionnairePayload : ObjectiveC.NSObject, Swift.Codable {
+    @objc public init(_ module: Swift.Int, _ dynamicQuestionnaireValueType: Swift.Int, _ value: Swift.String)
+    @objc deinit
+    final public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  final public let data: [CoreSDK.QuestionnaireValue.QuestionnairePayload]
+  @objc public init(data: [CoreSDK.QuestionnaireValue.QuestionnairePayload])
+  public typealias Payload = [CoreSDK.QuestionnaireValue.QuestionnairePayload]
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension Swift.Double {
+  public var integer: Swift.Int {
+    get
+  }
+  public func rounded(toPlaces places: Swift.Int) -> Swift.Double
+  public func rounded(toPlaces places: Swift.Int) -> Swift.String
+}
+public enum Constant : Swift.RawRepresentable, Swift.CaseIterable {
+  case smokingStatus
+  case smokingHistory
+  public var rawValue: CoreSDK.DataType {
+    get
+  }
+  public init?(rawValue: CoreSDK.DataType)
+  public typealias AllCases = [CoreSDK.Constant]
+  public typealias RawValue = CoreSDK.DataType
+  public static var allCases: [CoreSDK.Constant] {
+    get
+  }
+}
+@objc(CustomerValue) final public class CustomerValue : ObjectiveC.NSObject, CoreSDK.ValueProtocol {
+  final public let data: [CoreSDK.CustomerValue.CustomerPayload]
+  @objc public init(data: [CoreSDK.CustomerValue.CustomerPayload])
+  @objc(CustomerPayload) final public class CustomerPayload : ObjectiveC.NSObject, Swift.Codable {
+    @objc public init(value: Swift.String, of type: CoreSDK.DataType)
+    @objc convenience public init(value: Swift.String, of type: CoreSDK.DataType, on day: Foundation.Date)
+    @objc deinit
+    final public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  public typealias Payload = [CoreSDK.CustomerValue.CustomerPayload]
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class Internal {
+  public static func key(key: Swift.String) -> Swift.String?
+  @objc deinit
+}
+@objc(DataSourceInformation) final public class DataSourceInformation : ObjectiveC.NSObject, Swift.Codable {
+  final public let connectedSources: [CoreSDK.ConnectedSource]
+  public init(connectedSources: [CoreSDK.ConnectedSource])
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc(DataType) open class DataType : ObjectiveC.NSObject {
+  @objc public var valueType: CoreSDK.ValueType
+  @objc public var type: Swift.Int
+  @objc public var name: Swift.String?
+  @objc public init(_ type: Swift.Int, _ valueType: CoreSDK.ValueType, _ name: Swift.String? = nil)
+  @objc deinit
+}
+open class ValueUpdateRequest<T> : CoreSDK.Request where T : Swift.Decodable, T : Swift.Encodable {
+  public init(interface: CoreSDK.Http.Interface = .v5, endPoint: Swift.String, accessToken: Swift.String?, appId: Swift.String, appSecret: Swift.String, data: T, shouldEncrypt: Swift.Bool = true) throws
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(CoreWebViewController) @_Concurrency.MainActor(unsafe) open class CoreWebViewController : UIKit.UIViewController, WebKit.WKUIDelegate {
+  @objc @_Concurrency.MainActor(unsafe) weak public var coreWebViewDelegate: CoreSDK.CoreWebViewDelegate?
+  @objc @_Concurrency.MainActor(unsafe) final public let webView: WebKit.WKWebView
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc(CoreWebViewController) extension CoreSDK.CoreWebViewController {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func loadDirectConnection()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func loadDirectRevoke()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func loadDataSourceConnection()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func clearCaches()
+}
+@objc(CoreWebViewController) extension CoreSDK.CoreWebViewController : WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+}
+extension Swift.Dictionary where Key == Swift.String {
+  public func query() -> Swift.String
+}
+@_hasMissingDesignatedInitializers final public class Preferences {
+  public struct Credentials {
+    public let accessToken: Swift.String
+    public let appId: Swift.String
+    public let appSecret: Swift.String
+    public let partnerUserId: Swift.String?
+    public let language: Swift.String?
+    public static func make() throws -> CoreSDK.Preferences.Credentials
+  }
+  public static func get<T>(key: Swift.String, defaultValue: T) -> T
+  public static func set(_ value: Any?, for key: Swift.String)
+  @objc deinit
+}
+public enum AccessTokenError : Swift.Error {
+  case noAccessTokenFound(_: Swift.String = "No access token found. Request access token!")
+}
+public enum RequestError : Swift.Error {
+  case noData(_: Swift.String = "No data")
+  case invalidPayload(Swift.String)
+  case invalidUrl(Swift.String)
+  case statusCode(Swift.String)
+  case invalidCredentials(_: Swift.String = "Invalid authorization credentials were provided")
+}
+public enum EncryptionError : Swift.Error {
+  case key(_: Swift.String = "Invalid key length")
+  case iv(_: Swift.String = "Invalid iv length")
+  case statusCode(_: Swift.String = "Crypt status code unsuccessful")
+  case data(_: Swift.String = "Invalid decryption/encryption data")
+}
+public enum CodingError : Swift.Error {
+  case invalidData(Swift.String)
+  case badEncoding(_: Swift.String = "Data can not be represented as valid JSON string")
+}
+public struct ConnectionError : Swift.Error {
+}
+public struct ResponseError : Swift.Error {
+  public init(_ message: Swift.String?)
+}
+@objc(Tracker) final public class Tracker : ObjectiveC.NSObject {
+  public enum Provider : Swift.RawRepresentable, Swift.CaseIterable {
+    case fitbit
+    case garmin
+    case polar
+    case misfit
+    case withings
+    case strava
+    case google
+    case omron
+    case suunto
+    case oura
+    case iHealth
+    case sleepAsAndroid
+    case omronWellness
+    public var rawValue: (name: Swift.String?, id: Swift.Int) {
+      get
+    }
+    public init?(rawValue: (name: Swift.String?, id: Swift.Int))
+    public static func == (a: CoreSDK.Tracker.Provider, b: CoreSDK.Tracker.Provider) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public typealias AllCases = [CoreSDK.Tracker.Provider]
+    public typealias RawValue = (name: Swift.String?, id: Swift.Int)
+    public static var allCases: [CoreSDK.Tracker.Provider] {
+      get
+    }
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc final public let id: Swift.Int
+  @objc final public let name: Swift.String?
+  @objc public init(_ name: Swift.String?, _ id: Swift.Int)
+  convenience public init(_ provider: CoreSDK.Tracker.Provider)
+  @objc deinit
+}
+@objc(SourceInformation) final public class SourceInformation : ObjectiveC.NSObject, Swift.Codable {
+  final public let id: Swift.Int
+  final public let name: Swift.String
+  final public let logo: Swift.String?
+  public init(id: Swift.Int, name: Swift.String, logo: Swift.String?)
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+final public class KeychainAssistant {
+  final public var accessToken: Swift.String? {
+    get
+    set
+  }
+  final public var pseudonym: Swift.String? {
+    get
+    set
+  }
+  final public var pin: Swift.String? {
+    get
+    set
+  }
+  public init()
+  @objc deinit
+}
+extension CoreSDK.KeychainAssistant {
+  public static func make(appId: Swift.String, appSecret: Swift.String, partnerUserId: Swift.String?, language: Swift.String?) -> CoreSDK.KeychainAssistant
+}
+@objc final public class NetworkClient : ObjectiveC.NSObject {
+  final public let appId: Swift.String
+  final public let appSecret: Swift.String
+  final public let partnerUserId: Swift.String?
+  final public let language: Swift.String?
+  final public let accessToken: Swift.String?
+  final public func urlSession() -> Foundation.URLSession?
+  public init(appId: Swift.String, appSecret: Swift.String, partnerUserId: Swift.String?, language: Swift.String?, accessToken: Swift.String?)
+  final public func postUserInformation(interface: CoreSDK.Http.Interface = .v5, completionHandler: @escaping ([CoreSDK.UserInformation], Swift.Error?) -> Swift.Void)
+  final public func putUserInformation(interface: CoreSDK.Http.Interface = .v5, data: CoreSDK.User, completionHandler: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  final public func execute<T>(request: T, completionHandler: @escaping (Swift.Result<Foundation.Data, Swift.Error>) -> Swift.Void) where T : CoreSDK.Request
+  public enum NetworkingError : Swift.Int {
+    case DATA_TASK_ERROR
+    case INVALID_RESPONSE
+    case REQUEST_FAILED
+    case REQUEST_FAILED_NO_DATA
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  final public func executeRequest<T>(request: T, completionHandler: @escaping (CoreSDK.ThryveResponse<Foundation.Data?>) -> Swift.Void) where T : CoreSDK.Request
+  @objc deinit
+}
+extension CoreSDK.NetworkClient {
+  public static func make(with keychain: CoreSDK.KeychainAssistant) -> CoreSDK.NetworkClient?
+  final public func disconnect()
+}
+extension CoreSDK.NetworkClient : Foundation.URLSessionDelegate {
+  @objc final public func urlSession(_ session: Foundation.URLSession, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+}
+public enum Daily : Swift.RawRepresentable, Swift.CaseIterable {
+  case weight
+  case fatRatio
+  case bmi
+  case height
+  case waistCircumference
+  case environmentalAudioExposure
+  case headphoneAudioExposure
+  case audioExposureEvent
+  case rest
+  case active
+  case walk
+  case run
+  case bike
+  case transport
+  case steps
+  case coveredDistance
+  case floorsClimbed
+  case burnedCalories
+  case activeBurnedCalories
+  case hearRate
+  case rmssd
+  case hrvScore
+  case respirationRate
+  case heartRateResting
+  case bloodOxygen
+  case bodyTemperature
+  case bloodPressureSystolic
+  case bloodPressureDiastolic
+  case vo2max
+  case bloodGlucose
+  case consumedCalories
+  case consumedCarbohydrates
+  case consumedFiber
+  case consumedSugar
+  case consumedFat
+  case consumedSaturatedFat
+  case consumedProtein
+  case consumedVitaminA
+  case consumedVitaminB1
+  case consumedVitaminB2
+  case consumedVitaminB3
+  case consumedVitaminB5
+  case consumedVitaminB6
+  case consumedVitaminB12
+  case consumedVitaminC
+  case consumedVitaminD
+  case consumedVitaminE
+  case consumedVitaminK
+  case consumedCalcium
+  case consumedIron
+  case consumedMagnesium
+  case consumedPhosphorus
+  case consumedPotassium
+  case consumedSodium
+  case consumedZinc
+  case consumedIodine
+  case sleep
+  case sleepInBed
+  case sleepAwake
+  case sleepLight
+  case sleepREM
+  case sleepDeep
+  case sleepStartTime
+  case sleepEndTime
+  case electrodermalActivity
+  case consumedWater
+  public var rawValue: CoreSDK.DataType {
+    get
+  }
+  public init?(rawValue: CoreSDK.DataType)
+  public typealias AllCases = [CoreSDK.Daily]
+  public typealias RawValue = CoreSDK.DataType
+  public static var allCases: [CoreSDK.Daily] {
+    get
+  }
+}
+@objc(PolicyInformation) final public class PolicyInformation : ObjectiveC.NSObject, CoreSDK.ValueProtocol {
+  public typealias Payload = Swift.Int
+  final public let data: CoreSDK.PolicyInformation.Payload
+  @objc public init(data: CoreSDK.PolicyInformation.Payload)
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct AnyCodable {
+  public let value: Any
+  public init<T>(_ value: T?)
+}
+extension CoreSDK.AnyCodable : Swift.Codable {
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension CoreSDK.AnyCodable : Swift.Equatable {
+  public static func == (lhs: CoreSDK.AnyCodable, rhs: CoreSDK.AnyCodable) -> Swift.Bool
+}
+extension CoreSDK.AnyCodable : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension CoreSDK.AnyCodable : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+extension CoreSDK.AnyCodable : Swift.ExpressibleByNilLiteral, Swift.ExpressibleByBooleanLiteral, Swift.ExpressibleByIntegerLiteral, Swift.ExpressibleByFloatLiteral, Swift.ExpressibleByStringLiteral, Swift.ExpressibleByArrayLiteral, Swift.ExpressibleByDictionaryLiteral {
+  public init(nilLiteral: ())
+  public init(booleanLiteral value: Swift.Bool)
+  public init(integerLiteral value: Swift.Int)
+  public init(floatLiteral value: Swift.Double)
+  public init(extendedGraphemeClusterLiteral value: Swift.String)
+  public init(stringLiteral value: Swift.String)
+  public init(arrayLiteral elements: Any...)
+  public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
+  public typealias ArrayLiteralElement = Any
+  public typealias BooleanLiteralType = Swift.Bool
+  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
+  public typealias FloatLiteralType = Swift.Double
+  public typealias IntegerLiteralType = Swift.Int
+  public typealias Key = Swift.AnyHashable
+  public typealias StringLiteralType = Swift.String
+  public typealias UnicodeScalarLiteralType = Swift.String
+  public typealias Value = Any
+}
+extension Dispatch.DispatchQueue {
+  public class func once(executionToken: Swift.String, _ closure: () -> Swift.Void)
+  public class func onceIn(executionToken: Swift.String, interval: Foundation.TimeInterval, _ closure: (_ success: Swift.Bool) -> Swift.Void)
+}
+public protocol ParserDelegate : AnyObject {
+  func parserDidBeginDocument(_ parser: CoreSDK.CSV.Parser)
+  func parserDidEndDocument(_ parser: CoreSDK.CSV.Parser)
+  func parser(_ parser: CoreSDK.CSV.Parser, didBeginLineAt index: Swift.UInt)
+  func parser(_ parser: CoreSDK.CSV.Parser, didEndLineAt index: Swift.UInt)
+  func parser(_ parser: CoreSDK.CSV.Parser, didReadFieldAt index: Swift.UInt, value: Swift.String)
+}
+public struct CSVError : Swift.Error {
+  public let description: Swift.String
+}
+public struct CSV {
+  public class Writer {
+    public init(outputStream: Foundation.OutputStream, configuration: CoreSDK.CSV.Configuration)
+    public func writeLine(of fields: [Swift.String]) throws
+    @objc deinit
+  }
+  public class Parser {
+    weak public var delegate: CoreSDK.ParserDelegate?
+    final public let configuration: CoreSDK.CSV.Configuration
+    public var trimsWhitespaces: Swift.Bool
+    convenience public init?(url: Foundation.URL, configuration: CoreSDK.CSV.Configuration)
+    convenience public init(string: Swift.String, configuration: CoreSDK.CSV.Configuration)
+    convenience public init(data: Foundation.Data, configuration: CoreSDK.CSV.Configuration)
+    public init(inputStream: Foundation.InputStream, configuration: CoreSDK.CSV.Configuration = CSV.Configuration(delimiter: ","))
+    public func cancel()
+    public func parse() throws
+    @objc deinit
+  }
+  public struct Configuration {
+    public let delimiter: Swift.UnicodeScalar
+    public let encoding: Swift.String.Encoding
+    public static func detectConfigurationForContentsOfURL(_ url: Foundation.URL) -> CoreSDK.CSV.Configuration?
+    public static func detectConfigurationForInputStream(_ stream: Foundation.InputStream) -> CoreSDK.CSV.Configuration?
+    public static func detectConfigurationForString(_ string: Swift.String, encoding: Swift.String.Encoding) -> CoreSDK.CSV.Configuration
+    public init(delimiter: Swift.UnicodeScalar, encoding: Swift.String.Encoding = .utf8)
+  }
+}
+@objc(ConstantValue) final public class ConstantValue : ObjectiveC.NSObject, Swift.Codable {
+  @objc(ConstantData) final public class ConstantData : ObjectiveC.NSObject, Swift.Codable {
+    final public let createdAt: Swift.String
+    final public let dailyDynamicValueType: Swift.Int
+    final public let value: Swift.String
+    final public let valueType: Swift.String
+    public init(createdAt: Swift.String, dailyDynamicValueType: Swift.Int, value: Swift.String, valueType: Swift.String)
+    @objc deinit
+    final public func encode(to encoder: Swift.Encoder) throws
+    public init(from decoder: Swift.Decoder) throws
+  }
+  final public let authenticationToken: Swift.String
+  final public let data: [CoreSDK.ConstantValue.ConstantData]
+  public init(authenticationToken: Swift.String, data: [CoreSDK.ConstantValue.ConstantData])
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc(CoreConnector) final public class CoreConnector : ObjectiveC.NSObject {
+  @objc public init(appId: Swift.String, appSecret: Swift.String, partnerUserId: Swift.String? = nil, language: Swift.String? = nil)
+  @objc deinit
+}
+@objc(CoreConnector) extension CoreSDK.CoreConnector {
+  @objc final public func getAccessToken(completionHandler: @escaping (Swift.String?, Swift.Error?) -> Swift.Void)
+  @nonobjc final public func hasAccessToken(completionHandler: @escaping (Swift.Bool?) -> Swift.Void)
+  @objc final public func setAccessToken(_ accessToken: Swift.String)
+  @objc final public func getDataSourceUrl(completionHandler: @escaping (Foundation.URL?, Swift.String?, Swift.Error?) -> Swift.Void)
+  @objc final public func directConnection(to tracker: CoreSDK.Tracker, completionHandler: @escaping (Foundation.URL?, Swift.Error?) -> Swift.Void)
+  @objc final public func directRevoke(from tracker: CoreSDK.Tracker, instant: Swift.Bool = false, completionHandler: @escaping (Foundation.URL?, Swift.Error?) -> Swift.Void)
+  @objc final public func connected(url: Foundation.URL, completionHandler: (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func uploadConstantValue(data: CoreSDK.CustomerValue, completionHandler: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func uploadDailyDynamicValue(data: CoreSDK.CustomerValue, completionHandler: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func uploadUserInformation(data: CoreSDK.User, completionHandler: @escaping (Swift.Bool, Swift.Error?) -> Swift.Void)
+  @objc final public func getUserInformation(completionHandler: @escaping ([CoreSDK.UserInformation], Swift.Error?) -> Swift.Void)
+}
+extension Swift.Array where Element : Swift.Equatable {
+  public static var empty: Swift.Array<Element> {
+    get
+  }
+  public mutating func addUnique(element: Element)
+  public func chunked(into size: Swift.Int) -> [[Element]]
+}
+extension Swift.Sequence where Self.Element : Swift.Hashable {
+  public var duplicates: [Self.Element : Swift.Int] {
+    get
+  }
+}
+open class Request {
+  public var request: Foundation.URLRequest
+  public init(interface: CoreSDK.Http.Interface = .v5, endPoint: Swift.String, httpMethod: CoreSDK.Http.Method, contentType: CoreSDK.Http.HeaderValue, requestBody: Swift.String? = nil, appId: Swift.String, appSecret: Swift.String, extraHeaders: [Swift.String : Swift.String]? = nil) throws
+  public static func sanitizeForHttp(content: Swift.String) -> Swift.String?
+  @objc deinit
+}
+public class EcgEntry : Swift.Codable, Swift.Equatable {
+  public static func == (lhs: CoreSDK.EcgEntry, rhs: CoreSDK.EcgEntry) -> Swift.Bool
+  final public let t: Swift.String
+  public init(timeSinceStart: Swift.String, voltage: Swift.String)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+public class EcgMeasurement : Swift.Codable {
+  public init(sampleFrequencyInHz: Swift.Double, ecgEntries: [CoreSDK.EcgEntry])
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc(User) final public class User : ObjectiveC.NSObject, Swift.Codable {
+  final public var height: Swift.Int?
+  final public var weight: Swift.Double?
+  final public var birthdate: Swift.String?
+  final public var gender: Swift.String?
+  final public var postalCode: Swift.String?
+  final public var authenticationToken: Swift.String?
+  final public var accessToken: Swift.String?
+  final public var partnerUserId: Swift.String?
+  @objc convenience public init(height: Foundation.NSNumber?, weight: Foundation.NSNumber?, birthdate: Foundation.Date?, gender: Foundation.NSNumber?, postalCode: Swift.String?)
+  convenience public init(height: Swift.Int?, weight: Swift.Double?, birthdate: Foundation.Date?, gender: CoreSDK.Gender?, postalCode: Swift.String? = nil)
+  @objc override dynamic public init()
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Http {
+  public enum Interface : Swift.String {
+    case v5
+    case covid19
+    case tsa
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Method : Swift.String {
+    case post
+    case get
+    case put
+    case delete
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum HeaderField : Swift.String {
+    case authorization
+    case appAuthorization
+    case contentType
+    case xSdkVersion
+    case xSdkRestVersion
+    case xSdkPlatformName
+    case xSdkPlatformVersion
+    case xSdkDevice
+    case xAppClientId
+    case xAppClientVersion
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum HeaderValue : Swift.String {
+    case urlEncoded
+    case applicationJson
+    case textPlain
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+extension Foundation.Date {
+  public static var yyyyMMddHHmmss: Swift.String {
+    get
+  }
+  public static var yyyyMMddTHHmmssZ: Swift.String {
+    get
+  }
+  public static var yyyyMMddTHHmmssZZZZZ: Swift.String {
+    get
+  }
+  public static var yyyyMMdd: Swift.String {
+    get
+  }
+  public static var day: Foundation.TimeInterval {
+    get
+  }
+  public static var hour: Foundation.TimeInterval {
+    get
+  }
+  public static var minute: Foundation.TimeInterval {
+    get
+  }
+  public var dayStart: Foundation.Date {
+    get
+  }
+  public var dayEnd: Foundation.Date {
+    get
+  }
+  public var queryMargin: Foundation.Date {
+    get
+  }
+  public var hourAgo: Foundation.Date {
+    get
+  }
+  public var yesterday: Foundation.Date {
+    get
+  }
+  public var weekAgo: Foundation.Date {
+    get
+  }
+  public var monthAgo: Foundation.Date {
+    get
+  }
+  public var midnight: Foundation.Date {
+    get
+  }
+  public var afternoon: Foundation.Date {
+    get
+  }
+  public var minuteDate: Foundation.Date {
+    get
+  }
+  public func secondsBetween(otherDate: Foundation.Date?) -> Swift.Int
+  public func minutesBetween(otherDate: Foundation.Date?) -> Swift.Int
+  public func formatted(with format: Swift.String, timezone: Foundation.TimeZone? = TimeZone.current) -> Swift.String
+  public func dayDifference(to other: Foundation.Date) -> Swift.Int?
+  public static func - (recent: Foundation.Date, previous: Foundation.Date) -> (month: Swift.Int?, day: Swift.Int?, hour: Swift.Int?, minute: Swift.Int?, second: Swift.Int?)
+}
+extension Foundation.Date : Swift.Strideable {
+  public func distance(to other: Foundation.Date) -> Foundation.TimeInterval
+  public func advanced(by n: Foundation.TimeInterval) -> Foundation.Date
+}
+@objc(DailyDynamicValue) final public class DailyDynamicValue : ObjectiveC.NSObject {
+  @objc(DailyData) final public class DailyData : ObjectiveC.NSObject {
+    final public let createdAt: Swift.String
+    final public let day: Swift.String?
+    final public let timestampUnix: Swift.Int?
+    final public let details: CoreSDK.DailyDynamicValue.Details?
+    final public let dailyDynamicValueType: Swift.Int
+    final public let value: Swift.String
+    final public let valueType: Swift.String
+    public init(createdAt: Swift.String, day: Swift.String?, timestampUnix: Swift.Int?, details: CoreSDK.DailyDynamicValue.Details?, dailyDynamicValueType: Swift.Int, value: Swift.String, valueType: Swift.String)
+    @objc deinit
+  }
+  @objc(DataSource) final public class DataSource : ObjectiveC.NSObject {
+    final public let dataSource: Swift.Int
+    final public let data: [CoreSDK.DailyDynamicValue.DailyData]
+    @objc public init(dataSource: Swift.Int, data: [CoreSDK.DailyDynamicValue.DailyData])
+    @objc deinit
+  }
+  @objc(Details) final public class Details : ObjectiveC.NSObject {
+    @objc final public let timezoneOffset: Swift.Int
+    @objc public init(timezoneOffset: Swift.Int)
+    @objc deinit
+  }
+  final public let authenticationToken: Swift.String
+  final public let dataSources: [CoreSDK.DailyDynamicValue.DataSource]
+  @objc public init(authenticationToken: Swift.String, dataSources: [CoreSDK.DailyDynamicValue.DataSource])
+  @objc deinit
+}
+extension Foundation.TimeZone {
+  public static var utc: Foundation.TimeZone? {
+    get
+  }
+}
+public protocol ValueProtocol : Swift.Decodable, Swift.Encodable {
+  associatedtype Payload
+  var data: Self.Payload { get }
+}
+@objc(Gender) public enum Gender : Swift.Int, Swift.CaseIterable {
+  case male = 0, female, genderless
+  public var string: Swift.String {
+    get
+  }
+  public static func from(string: Swift.String?) -> CoreSDK.Gender?
+  public static func from(number: Foundation.NSNumber?) -> CoreSDK.Gender?
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [CoreSDK.Gender]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [CoreSDK.Gender] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc(ValueType) public enum ValueType : Swift.Int, Swift.CaseIterable {
+  case double = 0, long, boolean, date, string, json
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [CoreSDK.ValueType]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [CoreSDK.ValueType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension CoreSDK.ValueType {
+  public var string: Swift.String {
+    get
+  }
+}
+extension Foundation.URLRequest {
+  public static let MAX_BODY_LOG_LENGTH: Swift.Int
+  public func curl(pretty: Swift.Bool = false) -> Swift.String
+}
+@objc(DataUploadInformation) final public class DataUploadInformation : ObjectiveC.NSObject, Swift.Codable {
+  final public let data: Foundation.Data?
+  public init(data: Swift.String)
+  @objc deinit
+  final public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public class ThryveError {
+  final public let errorCode: Swift.Int
+  final public let httpCode: Swift.Int?
+  final public let errorMessage: Swift.String?
+  final public let userMessage: Swift.String?
+  final public let traceID: Swift.String?
+  public init(errorCode: Swift.Int, httpCode: Swift.Int? = nil, errorMessage: Swift.String?, userMessage: Swift.String? = nil, traceID: Swift.String? = nil)
+  @objc deinit
+}
+public struct ThryveResponse<T> {
+  public init(data: T?, error: CoreSDK.ThryveError?)
+  public let data: T?
+  public let error: CoreSDK.ThryveError?
+  public var successful: Swift.Bool {
+    get
+  }
+}
+public class DynamicCache<T> {
+  public var dynamicSet: [T] {
+    get
+    set
+  }
+  public init(_ value: [T])
+  @objc deinit
+}
+extension CoreSDK.Logger.Verbosity : Swift.Equatable {}
+extension CoreSDK.Logger.Verbosity : Swift.Hashable {}
+extension CoreSDK.Intraday : Swift.Equatable {}
+extension CoreSDK.Intraday : Swift.Hashable {}
+extension CoreSDK.Constant : Swift.Equatable {}
+extension CoreSDK.Constant : Swift.Hashable {}
+extension CoreSDK.Tracker.Provider : Swift.Equatable {}
+extension CoreSDK.Tracker.Provider : Swift.Hashable {}
+extension CoreSDK.NetworkClient.NetworkingError : Swift.Equatable {}
+extension CoreSDK.NetworkClient.NetworkingError : Swift.Hashable {}
+extension CoreSDK.NetworkClient.NetworkingError : Swift.RawRepresentable {}
+extension CoreSDK.Daily : Swift.Equatable {}
+extension CoreSDK.Daily : Swift.Hashable {}
+extension CoreSDK.Http.Interface : Swift.Equatable {}
+extension CoreSDK.Http.Interface : Swift.Hashable {}
+extension CoreSDK.Http.Interface : Swift.RawRepresentable {}
+extension CoreSDK.Http.Method : Swift.Equatable {}
+extension CoreSDK.Http.Method : Swift.Hashable {}
+extension CoreSDK.Http.Method : Swift.RawRepresentable {}
+extension CoreSDK.Http.HeaderField : Swift.Equatable {}
+extension CoreSDK.Http.HeaderField : Swift.Hashable {}
+extension CoreSDK.Http.HeaderField : Swift.RawRepresentable {}
+extension CoreSDK.Http.HeaderValue : Swift.Equatable {}
+extension CoreSDK.Http.HeaderValue : Swift.Hashable {}
+extension CoreSDK.Http.HeaderValue : Swift.RawRepresentable {}
+extension CoreSDK.Gender : Swift.Equatable {}
+extension CoreSDK.Gender : Swift.Hashable {}
+extension CoreSDK.Gender : Swift.RawRepresentable {}
+extension CoreSDK.ValueType : Swift.Equatable {}
+extension CoreSDK.ValueType : Swift.Hashable {}
+extension CoreSDK.ValueType : Swift.RawRepresentable {}

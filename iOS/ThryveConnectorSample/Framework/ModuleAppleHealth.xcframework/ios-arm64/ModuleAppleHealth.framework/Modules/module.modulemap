@@ -1,0 +1,11 @@
+framework module ModuleAppleHealth {
+  umbrella header "ModuleAppleHealth.h"
+
+  export *
+  module * { export * }
+}
+
+module ModuleAppleHealth.Swift {
+  header "ModuleAppleHealth-Swift.h"
+  requires objc
+}

@@ -1,0 +1,9 @@
+[
+  {
+    "component": "SwiftLint",
+    "licensor": "Realm Inc.",
+    "website": "https://github.com/realm/SwiftLint",
+    "license": "MIT License",
+    "licenseUrl": "https://raw.githubusercontent.com/realm/SwiftLint/master/LICENSE"
+  }
+]

@@ -1,0 +1,49 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ModuleBGM
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import CoreBluetooth
+import CoreSDK
+import Foundation
+@_exported import ModuleBGM
+import ModuleCommons
+import Swift
+import _Concurrency
+import _StringProcessing
+@objc(BGMConnector) final public class BGMConnector : ObjectiveC.NSObject {
+  @objc public init(delegate: ModuleBGM.BLEDelegate, source: ModuleBGM.BGMDevice)
+  @objc final public func startScanning()
+  @objc final public func stopScanning()
+  @objc final public func connect(peripheral: CoreBluetooth.CBPeripheral)
+  @objc final public func disconnect()
+  @objc final public func sync(racp: CoreBluetooth.CBCharacteristic)
+  @objc final public func delete(source: ModuleBGM.BGMDevice)
+  @objc deinit
+}
+@objc(BGMDevice) public enum BGMDevice : Swift.Int, Swift.CaseIterable {
+  case iSens = 0
+  case bBraun
+  case rocheAccuChek
+  public var string: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [ModuleBGM.BGMDevice]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [ModuleBGM.BGMDevice] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol BLEDelegate {
+  @objc func ble(isActivated: Swift.Bool)
+  @objc func ble(didFound peripheral: CoreBluetooth.CBPeripheral, rssi: Swift.Int)
+  @objc func ble(didPaired peripheral: CoreBluetooth.CBPeripheral, error: Swift.Error?)
+  @objc func ble(ready racpCharacteristic: CoreBluetooth.CBCharacteristic)
+  @objc func ble(didDisconnect peripheral: CoreBluetooth.CBPeripheral, error: Swift.Error?)
+}
+extension ModuleBGM.BGMDevice : Swift.Equatable {}
+extension ModuleBGM.BGMDevice : Swift.Hashable {}
+extension ModuleBGM.BGMDevice : Swift.RawRepresentable {}

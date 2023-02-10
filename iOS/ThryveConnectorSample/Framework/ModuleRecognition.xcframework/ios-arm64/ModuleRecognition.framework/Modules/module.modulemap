@@ -1,0 +1,11 @@
+framework module ModuleRecognition {
+  umbrella header "ModuleRecognition.h"
+
+  export *
+  module * { export * }
+}
+
+module ModuleRecognition.Swift {
+  header "ModuleRecognition-Swift.h"
+  requires objc
+}

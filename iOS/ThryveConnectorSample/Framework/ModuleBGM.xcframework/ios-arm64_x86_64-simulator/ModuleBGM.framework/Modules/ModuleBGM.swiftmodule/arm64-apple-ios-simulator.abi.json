@@ -1,0 +1,4524 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM"
+      },
+      {
+        "kind": "Import",
+        "name": "ModuleCommons",
+        "printedName": "ModuleCommons",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BLEContext",
+        "printedName": "BLEContext",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "PairedDevice",
+            "printedName": "PairedDevice",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "iSens",
+                "printedName": "iSens",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ModuleBGM.BLEContext.PairedDevice.Type) -> ModuleBGM.BLEContext.PairedDevice",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PairedDevice",
+                        "printedName": "ModuleBGM.BLEContext.PairedDevice",
+                        "usr": "s:9ModuleBGM10BLEContextC12PairedDeviceO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ModuleBGM.BLEContext.PairedDevice.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PairedDevice",
+                            "printedName": "ModuleBGM.BLEContext.PairedDevice",
+                            "usr": "s:9ModuleBGM10BLEContextC12PairedDeviceO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9ModuleBGM10BLEContextC12PairedDeviceO5iSensyA2EmF",
+                "mangledName": "$s9ModuleBGM10BLEContextC12PairedDeviceO5iSensyA2EmF",
+                "moduleName": "ModuleBGM",
+                "fixedbinaryorder": 0
+              },
+              {
+                "kind": "Var",
+                "name": "bBraun",
+                "printedName": "bBraun",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ModuleBGM.BLEContext.PairedDevice.Type) -> ModuleBGM.BLEContext.PairedDevice",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PairedDevice",
+                        "printedName": "ModuleBGM.BLEContext.PairedDevice",
+                        "usr": "s:9ModuleBGM10BLEContextC12PairedDeviceO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ModuleBGM.BLEContext.PairedDevice.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PairedDevice",
+                            "printedName": "ModuleBGM.BLEContext.PairedDevice",
+                            "usr": "s:9ModuleBGM10BLEContextC12PairedDeviceO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9ModuleBGM10BLEContextC12PairedDeviceO6bBraunyA2EmF",
+                "mangledName": "$s9ModuleBGM10BLEContextC12PairedDeviceO6bBraunyA2EmF",
+                "moduleName": "ModuleBGM",
+                "fixedbinaryorder": 1
+              },
+              {
+                "kind": "Var",
+                "name": "roche",
+                "printedName": "roche",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ModuleBGM.BLEContext.PairedDevice.Type) -> ModuleBGM.BLEContext.PairedDevice",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PairedDevice",
+                        "printedName": "ModuleBGM.BLEContext.PairedDevice",
+                        "usr": "s:9ModuleBGM10BLEContextC12PairedDeviceO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "ModuleBGM.BLEContext.PairedDevice.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PairedDevice",
+                            "printedName": "ModuleBGM.BLEContext.PairedDevice",
+                            "usr": "s:9ModuleBGM10BLEContextC12PairedDeviceO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9ModuleBGM10BLEContextC12PairedDeviceO5rocheyA2EmF",
+                "mangledName": "$s9ModuleBGM10BLEContextC12PairedDeviceO5rocheyA2EmF",
+                "moduleName": "ModuleBGM",
+                "fixedbinaryorder": 2
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ModuleBGM.BLEContext.PairedDevice?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PairedDevice",
+                        "printedName": "ModuleBGM.BLEContext.PairedDevice",
+                        "usr": "s:9ModuleBGM10BLEContextC12PairedDeviceO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:9ModuleBGM10BLEContextC12PairedDeviceO8rawValueAESgSS_tcfc",
+                "mangledName": "$s9ModuleBGM10BLEContextC12PairedDeviceO8rawValueAESgSS_tcfc",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9ModuleBGM10BLEContextC12PairedDeviceO8rawValueSSvp",
+                "mangledName": "$s9ModuleBGM10BLEContextC12PairedDeviceO8rawValueSSvp",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9ModuleBGM10BLEContextC12PairedDeviceO8rawValueSSvg",
+                    "mangledName": "$s9ModuleBGM10BLEContextC12PairedDeviceO8rawValueSSvg",
+                    "moduleName": "ModuleBGM",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:9ModuleBGM10BLEContextC12PairedDeviceO",
+            "mangledName": "$s9ModuleBGM10BLEContextC12PairedDeviceO",
+            "moduleName": "ModuleBGM",
+            "enumRawTypeName": "String",
+            "isEnumExhaustive": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bleDelegate",
+            "printedName": "bleDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "ModuleBGM.BLEDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC11bleDelegateAA11BLEDelegate_pSgvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC11bleDelegateAA11BLEDelegate_pSgvp",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "ReferenceOwnership"
+            ],
+            "fixedbinaryorder": 0,
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ModuleBGM.BLEDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BLEDelegate",
+                        "printedName": "ModuleBGM.BLEDelegate",
+                        "usr": "c:@M@ModuleBGM@objc(pl)BLEDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM10BLEContextC11bleDelegateAA11BLEDelegate_pSgvg",
+                "mangledName": "$s9ModuleBGM10BLEContextC11bleDelegateAA11BLEDelegate_pSgvg",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ModuleBGM.BLEDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BLEDelegate",
+                        "printedName": "ModuleBGM.BLEDelegate",
+                        "usr": "c:@M@ModuleBGM@objc(pl)BLEDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM10BLEContextC11bleDelegateAA11BLEDelegate_pSgvs",
+                "mangledName": "$s9ModuleBGM10BLEContextC11bleDelegateAA11BLEDelegate_pSgvs",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM10BLEContextC11bleDelegateAA11BLEDelegate_pSgvM",
+                "mangledName": "$s9ModuleBGM10BLEContextC11bleDelegateAA11BLEDelegate_pSgvM",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bgmDelegate",
+            "printedName": "bgmDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "ModuleBGM.BGMRecordDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC11bgmDelegateAA09BGMRecordE0_pSgvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC11bgmDelegateAA09BGMRecordE0_pSgvp",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "ReferenceOwnership"
+            ],
+            "fixedbinaryorder": 1,
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ModuleBGM.BGMRecordDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BGMRecordDelegate",
+                        "printedName": "ModuleBGM.BGMRecordDelegate",
+                        "usr": "s:9ModuleBGM17BGMRecordDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM10BLEContextC11bgmDelegateAA09BGMRecordE0_pSgvg",
+                "mangledName": "$s9ModuleBGM10BLEContextC11bgmDelegateAA09BGMRecordE0_pSgvg",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "ModuleBGM.BGMRecordDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BGMRecordDelegate",
+                        "printedName": "ModuleBGM.BGMRecordDelegate",
+                        "usr": "s:9ModuleBGM17BGMRecordDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM10BLEContextC11bgmDelegateAA09BGMRecordE0_pSgvs",
+                "mangledName": "$s9ModuleBGM10BLEContextC11bgmDelegateAA09BGMRecordE0_pSgvs",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM10BLEContextC11bgmDelegateAA09BGMRecordE0_pSgvM",
+                "mangledName": "$s9ModuleBGM10BLEContextC11bgmDelegateAA09BGMRecordE0_pSgvM",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dataReceived",
+            "printedName": "dataReceived",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BGMData",
+                "printedName": "ModuleBGM.BGMData",
+                "usr": "s:9ModuleBGM7BGMDataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC12dataReceived33_4CDC84EBBEEAC59DA75B7DB155A414D4LLAA7BGMDataVvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC12dataReceived33_4CDC84EBBEEAC59DA75B7DB155A414D4LLAA7BGMDataVvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "receivedDataSet",
+            "printedName": "receivedDataSet",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ModuleBGM.BGMData]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BGMData",
+                    "printedName": "ModuleBGM.BGMData",
+                    "usr": "s:9ModuleBGM7BGMDataV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC15receivedDataSet33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSayAA7BGMDataVGvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC15receivedDataSet33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSayAA7BGMDataVGvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 3,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "centralManager",
+            "printedName": "centralManager",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "CoreBluetooth.CBCentralManager?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CBCentralManager",
+                    "printedName": "CoreBluetooth.CBCentralManager",
+                    "usr": "c:objc(cs)CBCentralManager"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC14centralManager33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo09CBCentralE0CSgvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC14centralManager33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo09CBCentralE0CSgvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 4,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "glucosePeripheral",
+            "printedName": "glucosePeripheral",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "CoreBluetooth.CBPeripheral?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CBPeripheral",
+                    "printedName": "CoreBluetooth.CBPeripheral",
+                    "usr": "c:objc(cs)CBPeripheral"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC17glucosePeripheral33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo12CBPeripheralCSgvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC17glucosePeripheral33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo12CBPeripheralCSgvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 5,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "source",
+            "printedName": "source",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BGMDevice",
+                "printedName": "ModuleBGM.BGMDevice",
+                "usr": "c:@M@ModuleBGM@E@BGMDevice"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC6source33_4CDC84EBBEEAC59DA75B7DB155A414D4LLAA9BGMDeviceOvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC6source33_4CDC84EBBEEAC59DA75B7DB155A414D4LLAA9BGMDeviceOvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 6,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "pairing",
+            "printedName": "pairing",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC7pairing33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSbvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC7pairing33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSbvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 7,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "deviceInfoServiceCBUUID",
+            "printedName": "deviceInfoServiceCBUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CBUUID",
+                "printedName": "CoreBluetooth.CBUUID",
+                "usr": "c:objc(cs)CBUUID"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC23deviceInfoServiceCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0G0Cvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC23deviceInfoServiceCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0G0Cvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 8,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "glucoseServiceCBUUID",
+            "printedName": "glucoseServiceCBUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CBUUID",
+                "printedName": "CoreBluetooth.CBUUID",
+                "usr": "c:objc(cs)CBUUID"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC20glucoseServiceCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0F0Cvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC20glucoseServiceCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0F0Cvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 9,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "glucoseMeasurementCharacteristicCBUUID",
+            "printedName": "glucoseMeasurementCharacteristicCBUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CBUUID",
+                "printedName": "CoreBluetooth.CBUUID",
+                "usr": "c:objc(cs)CBUUID"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC38glucoseMeasurementCharacteristicCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0G0Cvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC38glucoseMeasurementCharacteristicCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0G0Cvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 10,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "glucoseMeasurementContextCharacteristicCBUUID",
+            "printedName": "glucoseMeasurementContextCharacteristicCBUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CBUUID",
+                "printedName": "CoreBluetooth.CBUUID",
+                "usr": "c:objc(cs)CBUUID"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC45glucoseMeasurementContextCharacteristicCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0H0Cvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC45glucoseMeasurementContextCharacteristicCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0H0Cvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 11,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "glucoseFeatureCharacteristicCBUUID",
+            "printedName": "glucoseFeatureCharacteristicCBUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CBUUID",
+                "printedName": "CoreBluetooth.CBUUID",
+                "usr": "c:objc(cs)CBUUID"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC34glucoseFeatureCharacteristicCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0G0Cvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC34glucoseFeatureCharacteristicCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0G0Cvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 12,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "recordAccessControlPointCharacteristicCBUUID",
+            "printedName": "recordAccessControlPointCharacteristicCBUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CBUUID",
+                "printedName": "CoreBluetooth.CBUUID",
+                "usr": "c:objc(cs)CBUUID"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC44recordAccessControlPointCharacteristicCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0I0Cvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC44recordAccessControlPointCharacteristicCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0I0Cvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 13,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "manufactirerNameCharacteristicCBUUID",
+            "printedName": "manufactirerNameCharacteristicCBUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CBUUID",
+                "printedName": "CoreBluetooth.CBUUID",
+                "usr": "c:objc(cs)CBUUID"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC36manufactirerNameCharacteristicCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0G0Cvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC36manufactirerNameCharacteristicCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0G0Cvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 14,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "dateTimeCharacteristicCBUUID",
+            "printedName": "dateTimeCharacteristicCBUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CBUUID",
+                "printedName": "CoreBluetooth.CBUUID",
+                "usr": "c:objc(cs)CBUUID"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC28dateTimeCharacteristicCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0G0Cvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC28dateTimeCharacteristicCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0G0Cvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 15,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "clientCharacteristicConfigurationDescriptorCBUUID",
+            "printedName": "clientCharacteristicConfigurationDescriptorCBUUID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CBUUID",
+                "printedName": "CoreBluetooth.CBUUID",
+                "usr": "c:objc(cs)CBUUID"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC49clientCharacteristicConfigurationDescriptorCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0H0Cvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC49clientCharacteristicConfigurationDescriptorCBUUID33_4CDC84EBBEEAC59DA75B7DB155A414D4LLSo0H0Cvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 16,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "enableIndicationValue",
+            "printedName": "enableIndicationValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC21enableIndicationValue33_4CDC84EBBEEAC59DA75B7DB155A414D4LL10Foundation4DataVvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC21enableIndicationValue33_4CDC84EBBEEAC59DA75B7DB155A414D4LL10Foundation4DataVvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 17,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "enableNotificationValue",
+            "printedName": "enableNotificationValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM10BLEContextC23enableNotificationValue33_4CDC84EBBEEAC59DA75B7DB155A414D4LL10Foundation4DataVvp",
+            "mangledName": "$s9ModuleBGM10BLEContextC23enableNotificationValue33_4CDC84EBBEEAC59DA75B7DB155A414D4LL10Foundation4DataVvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 18,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BLEContext",
+                "printedName": "ModuleBGM.BLEContext",
+                "usr": "c:@M@ModuleBGM@objc(cs)BLEContext"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BGMDevice",
+                "printedName": "ModuleBGM.BGMDevice",
+                "usr": "c:@M@ModuleBGM@E@BGMDevice"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9ModuleBGM10BLEContextCyAcA9BGMDeviceOcfc",
+            "mangledName": "$s9ModuleBGM10BLEContextCyAcA9BGMDeviceOcfc",
+            "moduleName": "ModuleBGM",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startScanning",
+            "printedName": "startScanning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM10BLEContextC13startScanningyyF",
+            "mangledName": "$s9ModuleBGM10BLEContextC13startScanningyyF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopScanning",
+            "printedName": "stopScanning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM10BLEContextC12stopScanningyyF",
+            "mangledName": "$s9ModuleBGM10BLEContextC12stopScanningyyF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect(peripheral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM10BLEContextC7connect10peripheralySo12CBPeripheralC_tF",
+            "mangledName": "$s9ModuleBGM10BLEContextC7connect10peripheralySo12CBPeripheralC_tF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect(peripheral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM10BLEContextC10disconnect10peripheralySo12CBPeripheralC_tF",
+            "mangledName": "$s9ModuleBGM10BLEContextC10disconnect10peripheralySo12CBPeripheralC_tF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "write",
+            "printedName": "write(peripheral:characteristic:message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCharacteristic",
+                "printedName": "CoreBluetooth.CBCharacteristic",
+                "usr": "c:objc(cs)CBCharacteristic"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM10BLEContextC5write10peripheral14characteristic7messageySo12CBPeripheralC_So16CBCharacteristicC10Foundation4DataVtF",
+            "mangledName": "$s9ModuleBGM10BLEContextC5write10peripheral14characteristic7messageySo12CBPeripheralC_So16CBCharacteristicC10Foundation4DataVtF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "delete",
+            "printedName": "delete(source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BGMDevice",
+                "printedName": "ModuleBGM.BGMDevice",
+                "usr": "c:@M@ModuleBGM@E@BGMDevice"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM10BLEContextC6delete6sourceyAA9BGMDeviceO_tF",
+            "mangledName": "$s9ModuleBGM10BLEContextC6delete6sourceyAA9BGMDeviceO_tF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BLEContext",
+                "printedName": "ModuleBGM.BLEContext",
+                "usr": "c:@M@ModuleBGM@objc(cs)BLEContext"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ModuleBGM@objc(cs)BLEContext(im)init",
+            "mangledName": "$s9ModuleBGM10BLEContextCACycfc",
+            "moduleName": "ModuleBGM",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "centralManagerDidUpdateState",
+            "printedName": "centralManagerDidUpdateState(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCentralManager",
+                "printedName": "CoreBluetooth.CBCentralManager",
+                "usr": "c:objc(cs)CBCentralManager"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ModuleBGM@objc(cs)BLEContext(im)centralManagerDidUpdateState:",
+            "mangledName": "$s9ModuleBGM10BLEContextC28centralManagerDidUpdateStateyySo09CBCentralE0CF",
+            "moduleName": "ModuleBGM",
+            "objc_name": "centralManagerDidUpdateState:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "centralManager",
+            "printedName": "centralManager(_:didDiscover:advertisementData:rssi:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCentralManager",
+                "printedName": "CoreBluetooth.CBCentralManager",
+                "usr": "c:objc(cs)CBCentralManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ModuleBGM@objc(cs)BLEContext(im)centralManager:didDiscoverPeripheral:advertisementData:RSSI:",
+            "mangledName": "$s9ModuleBGM10BLEContextC14centralManager_11didDiscover17advertisementData4rssiySo09CBCentralE0C_So12CBPeripheralCSDySSypGSo8NSNumberCtF",
+            "moduleName": "ModuleBGM",
+            "objc_name": "centralManager:didDiscoverPeripheral:advertisementData:RSSI:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "centralManager",
+            "printedName": "centralManager(_:didConnect:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCentralManager",
+                "printedName": "CoreBluetooth.CBCentralManager",
+                "usr": "c:objc(cs)CBCentralManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ModuleBGM@objc(cs)BLEContext(im)centralManager:didConnectPeripheral:",
+            "mangledName": "$s9ModuleBGM10BLEContextC14centralManager_10didConnectySo09CBCentralE0C_So12CBPeripheralCtF",
+            "moduleName": "ModuleBGM",
+            "objc_name": "centralManager:didConnectPeripheral:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "centralManager",
+            "printedName": "centralManager(_:didFailToConnect:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCentralManager",
+                "printedName": "CoreBluetooth.CBCentralManager",
+                "usr": "c:objc(cs)CBCentralManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ModuleBGM@objc(cs)BLEContext(im)centralManager:didFailToConnectPeripheral:error:",
+            "mangledName": "$s9ModuleBGM10BLEContextC14centralManager_16didFailToConnect5errorySo09CBCentralE0C_So12CBPeripheralCs5Error_pSgtF",
+            "moduleName": "ModuleBGM",
+            "objc_name": "centralManager:didFailToConnectPeripheral:error:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "centralManager",
+            "printedName": "centralManager(_:didDisconnectPeripheral:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCentralManager",
+                "printedName": "CoreBluetooth.CBCentralManager",
+                "usr": "c:objc(cs)CBCentralManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ModuleBGM@objc(cs)BLEContext(im)centralManager:didDisconnectPeripheral:error:",
+            "mangledName": "$s9ModuleBGM10BLEContextC14centralManager_23didDisconnectPeripheral5errorySo09CBCentralE0C_So12CBPeripheralCs5Error_pSgtF",
+            "moduleName": "ModuleBGM",
+            "objc_name": "centralManager:didDisconnectPeripheral:error:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peripheral",
+            "printedName": "peripheral(_:didDiscoverServices:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ModuleBGM@objc(cs)BLEContext(im)peripheral:didDiscoverServices:",
+            "mangledName": "$s9ModuleBGM10BLEContextC10peripheral_19didDiscoverServicesySo12CBPeripheralC_s5Error_pSgtF",
+            "moduleName": "ModuleBGM",
+            "objc_name": "peripheral:didDiscoverServices:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peripheral",
+            "printedName": "peripheral(_:didDiscoverCharacteristicsFor:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBService",
+                "printedName": "CoreBluetooth.CBService",
+                "usr": "c:objc(cs)CBService"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ModuleBGM@objc(cs)BLEContext(im)peripheral:didDiscoverCharacteristicsForService:error:",
+            "mangledName": "$s9ModuleBGM10BLEContextC10peripheral_29didDiscoverCharacteristicsFor5errorySo12CBPeripheralC_So9CBServiceCs5Error_pSgtF",
+            "moduleName": "ModuleBGM",
+            "objc_name": "peripheral:didDiscoverCharacteristicsForService:error:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peripheral",
+            "printedName": "peripheral(_:didDiscoverDescriptorsFor:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCharacteristic",
+                "printedName": "CoreBluetooth.CBCharacteristic",
+                "usr": "c:objc(cs)CBCharacteristic"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ModuleBGM@objc(cs)BLEContext(im)peripheral:didDiscoverDescriptorsForCharacteristic:error:",
+            "mangledName": "$s9ModuleBGM10BLEContextC10peripheral_25didDiscoverDescriptorsFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtF",
+            "moduleName": "ModuleBGM",
+            "objc_name": "peripheral:didDiscoverDescriptorsForCharacteristic:error:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peripheral",
+            "printedName": "peripheral(_:didWriteValueFor:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCharacteristic",
+                "printedName": "CoreBluetooth.CBCharacteristic",
+                "usr": "c:objc(cs)CBCharacteristic"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ModuleBGM@objc(cs)BLEContext(im)peripheral:didWriteValueForCharacteristic:error:",
+            "mangledName": "$s9ModuleBGM10BLEContextC10peripheral_16didWriteValueFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtF",
+            "moduleName": "ModuleBGM",
+            "objc_name": "peripheral:didWriteValueForCharacteristic:error:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peripheral",
+            "printedName": "peripheral(_:didUpdateNotificationStateFor:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCharacteristic",
+                "printedName": "CoreBluetooth.CBCharacteristic",
+                "usr": "c:objc(cs)CBCharacteristic"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ModuleBGM@objc(cs)BLEContext(im)peripheral:didUpdateNotificationStateForCharacteristic:error:",
+            "mangledName": "$s9ModuleBGM10BLEContextC10peripheral_29didUpdateNotificationStateFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtF",
+            "moduleName": "ModuleBGM",
+            "objc_name": "peripheral:didUpdateNotificationStateForCharacteristic:error:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "peripheral",
+            "printedName": "peripheral(_:didUpdateValueFor:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCharacteristic",
+                "printedName": "CoreBluetooth.CBCharacteristic",
+                "usr": "c:objc(cs)CBCharacteristic"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@ModuleBGM@objc(cs)BLEContext(im)peripheral:didUpdateValueForCharacteristic:error:",
+            "mangledName": "$s9ModuleBGM10BLEContextC10peripheral_17didUpdateValueFor5errorySo12CBPeripheralC_So16CBCharacteristicCs5Error_pSgtF",
+            "moduleName": "ModuleBGM",
+            "objc_name": "peripheral:didUpdateValueForCharacteristic:error:",
+            "declAttributes": [
+              "Final",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ModuleBGM@objc(cs)BLEContext",
+        "mangledName": "$s9ModuleBGM10BLEContextC",
+        "moduleName": "ModuleBGM",
+        "declAttributes": [
+          "Final",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BGMRecordDelegate",
+        "printedName": "BGMRecordDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "record",
+            "printedName": "record(_:device:completionHandlder:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ModuleBGM.BGMData]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BGMData",
+                    "printedName": "ModuleBGM.BGMData",
+                    "usr": "s:9ModuleBGM7BGMDataV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ModuleBGM.BGMDevice?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BGMDevice",
+                    "printedName": "ModuleBGM.BGMDevice",
+                    "usr": "c:@M@ModuleBGM@E@BGMDevice"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ModuleBGM.SourceError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SourceError",
+                    "printedName": "ModuleBGM.SourceError",
+                    "usr": "s:9ModuleBGM11SourceErrorO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM17BGMRecordDelegateP6record_6device18completionHandlder5errorySayAA7BGMDataVG_AA9BGMDeviceOSgyyXEAA11SourceErrorOSgtF",
+            "mangledName": "$s9ModuleBGM17BGMRecordDelegateP6record_6device18completionHandlder5errorySayAA7BGMDataVG_AA9BGMDeviceOSgyyXEAA11SourceErrorOSgtF",
+            "moduleName": "ModuleBGM",
+            "genericSig": "<τ_0_0 where τ_0_0 : ModuleBGM.BGMRecordDelegate>",
+            "sugared_genericSig": "<Self where Self : ModuleBGM.BGMRecordDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9ModuleBGM17BGMRecordDelegateP",
+        "mangledName": "$s9ModuleBGM17BGMRecordDelegateP",
+        "moduleName": "ModuleBGM",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SourceError",
+        "printedName": "SourceError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "noSourceFound",
+            "printedName": "noSourceFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ModuleBGM.SourceError.Type) -> (Swift.String) -> ModuleBGM.SourceError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> ModuleBGM.SourceError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SourceError",
+                        "printedName": "ModuleBGM.SourceError",
+                        "usr": "s:9ModuleBGM11SourceErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ModuleBGM.SourceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SourceError",
+                        "printedName": "ModuleBGM.SourceError",
+                        "usr": "s:9ModuleBGM11SourceErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9ModuleBGM11SourceErrorO02noC5FoundyACSScACmF",
+            "mangledName": "$s9ModuleBGM11SourceErrorO02noC5FoundyACSScACmF",
+            "moduleName": "ModuleBGM",
+            "fixedbinaryorder": 0
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9ModuleBGM11SourceErrorO",
+        "mangledName": "$s9ModuleBGM11SourceErrorO",
+        "moduleName": "ModuleBGM",
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM"
+      },
+      {
+        "kind": "Import",
+        "name": "ModuleCommons",
+        "printedName": "ModuleCommons",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BGMConnector",
+        "printedName": "BGMConnector",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(delegate:source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BGMConnector",
+                "printedName": "ModuleBGM.BGMConnector",
+                "usr": "c:@M@ModuleBGM@objc(cs)BGMConnector"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BLEDelegate",
+                "printedName": "ModuleBGM.BLEDelegate",
+                "usr": "c:@M@ModuleBGM@objc(pl)BLEDelegate"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BGMDevice",
+                "printedName": "ModuleBGM.BGMDevice",
+                "usr": "c:@M@ModuleBGM@E@BGMDevice"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ModuleBGM@objc(cs)BGMConnector(im)initWithDelegate:source:",
+            "mangledName": "$s9ModuleBGM12BGMConnectorC8delegate6sourceAcA11BLEDelegate_p_AA9BGMDeviceOtcfc",
+            "moduleName": "ModuleBGM",
+            "objc_name": "initWithDelegate:source:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startScanning",
+            "printedName": "startScanning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ModuleBGM@objc(cs)BGMConnector(im)startScanning",
+            "mangledName": "$s9ModuleBGM12BGMConnectorC13startScanningyyF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopScanning",
+            "printedName": "stopScanning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ModuleBGM@objc(cs)BGMConnector(im)stopScanning",
+            "mangledName": "$s9ModuleBGM12BGMConnectorC12stopScanningyyF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect(peripheral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ModuleBGM@objc(cs)BGMConnector(im)connectWithPeripheral:",
+            "mangledName": "$s9ModuleBGM12BGMConnectorC7connect10peripheralySo12CBPeripheralC_tF",
+            "moduleName": "ModuleBGM",
+            "objc_name": "connectWithPeripheral:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ModuleBGM@objc(cs)BGMConnector(im)disconnect",
+            "mangledName": "$s9ModuleBGM12BGMConnectorC10disconnectyyF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sync",
+            "printedName": "sync(racp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCharacteristic",
+                "printedName": "CoreBluetooth.CBCharacteristic",
+                "usr": "c:objc(cs)CBCharacteristic"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ModuleBGM@objc(cs)BGMConnector(im)syncWithRacp:",
+            "mangledName": "$s9ModuleBGM12BGMConnectorC4sync4racpySo16CBCharacteristicC_tF",
+            "moduleName": "ModuleBGM",
+            "objc_name": "syncWithRacp:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "delete",
+            "printedName": "delete(source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BGMDevice",
+                "printedName": "ModuleBGM.BGMDevice",
+                "usr": "c:@M@ModuleBGM@E@BGMDevice"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ModuleBGM@objc(cs)BGMConnector(im)deleteWithSource:",
+            "mangledName": "$s9ModuleBGM12BGMConnectorC6delete6sourceyAA9BGMDeviceO_tF",
+            "moduleName": "ModuleBGM",
+            "objc_name": "deleteWithSource:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BGMConnector",
+                "printedName": "ModuleBGM.BGMConnector",
+                "usr": "c:@M@ModuleBGM@objc(cs)BGMConnector"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@ModuleBGM@objc(cs)BGMConnector(im)init",
+            "mangledName": "$s9ModuleBGM12BGMConnectorCACycfc",
+            "moduleName": "ModuleBGM",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ModuleBGM@objc(cs)BGMConnector",
+        "mangledName": "$s9ModuleBGM12BGMConnectorC",
+        "moduleName": "ModuleBGM",
+        "objc_name": "BGMConnector",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "BGMConnectorProtocol",
+            "printedName": "BGMConnectorProtocol",
+            "usr": "s:9ModuleBGM20BGMConnectorProtocolP",
+            "mangledName": "$s9ModuleBGM20BGMConnectorProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BGMConnectorProtocol",
+        "printedName": "BGMConnectorProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "startScanning",
+            "printedName": "startScanning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM20BGMConnectorProtocolP13startScanningyyF",
+            "mangledName": "$s9ModuleBGM20BGMConnectorProtocolP13startScanningyyF",
+            "moduleName": "ModuleBGM",
+            "genericSig": "<τ_0_0 where τ_0_0 : ModuleBGM.BGMConnectorProtocol>",
+            "sugared_genericSig": "<Self where Self : ModuleBGM.BGMConnectorProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopScanning",
+            "printedName": "stopScanning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM20BGMConnectorProtocolP12stopScanningyyF",
+            "mangledName": "$s9ModuleBGM20BGMConnectorProtocolP12stopScanningyyF",
+            "moduleName": "ModuleBGM",
+            "genericSig": "<τ_0_0 where τ_0_0 : ModuleBGM.BGMConnectorProtocol>",
+            "sugared_genericSig": "<Self where Self : ModuleBGM.BGMConnectorProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect(peripheral:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM20BGMConnectorProtocolP7connect10peripheralySo12CBPeripheralC_tF",
+            "mangledName": "$s9ModuleBGM20BGMConnectorProtocolP7connect10peripheralySo12CBPeripheralC_tF",
+            "moduleName": "ModuleBGM",
+            "genericSig": "<τ_0_0 where τ_0_0 : ModuleBGM.BGMConnectorProtocol>",
+            "sugared_genericSig": "<Self where Self : ModuleBGM.BGMConnectorProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM20BGMConnectorProtocolP10disconnectyyF",
+            "mangledName": "$s9ModuleBGM20BGMConnectorProtocolP10disconnectyyF",
+            "moduleName": "ModuleBGM",
+            "genericSig": "<τ_0_0 where τ_0_0 : ModuleBGM.BGMConnectorProtocol>",
+            "sugared_genericSig": "<Self where Self : ModuleBGM.BGMConnectorProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sync",
+            "printedName": "sync(racp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCharacteristic",
+                "printedName": "CoreBluetooth.CBCharacteristic",
+                "usr": "c:objc(cs)CBCharacteristic"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM20BGMConnectorProtocolP4sync4racpySo16CBCharacteristicC_tF",
+            "mangledName": "$s9ModuleBGM20BGMConnectorProtocolP4sync4racpySo16CBCharacteristicC_tF",
+            "moduleName": "ModuleBGM",
+            "genericSig": "<τ_0_0 where τ_0_0 : ModuleBGM.BGMConnectorProtocol>",
+            "sugared_genericSig": "<Self where Self : ModuleBGM.BGMConnectorProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "delete",
+            "printedName": "delete(source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BGMDevice",
+                "printedName": "ModuleBGM.BGMDevice",
+                "usr": "c:@M@ModuleBGM@E@BGMDevice"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM20BGMConnectorProtocolP6delete6sourceyAA9BGMDeviceO_tF",
+            "mangledName": "$s9ModuleBGM20BGMConnectorProtocolP6delete6sourceyAA9BGMDeviceO_tF",
+            "moduleName": "ModuleBGM",
+            "genericSig": "<τ_0_0 where τ_0_0 : ModuleBGM.BGMConnectorProtocol>",
+            "sugared_genericSig": "<Self where Self : ModuleBGM.BGMConnectorProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9ModuleBGM20BGMConnectorProtocolP",
+        "mangledName": "$s9ModuleBGM20BGMConnectorProtocolP",
+        "moduleName": "ModuleBGM"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BGMDevice",
+        "printedName": "BGMDevice",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "iSens",
+            "printedName": "iSens",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ModuleBGM.BGMDevice.Type) -> ModuleBGM.BGMDevice",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BGMDevice",
+                    "printedName": "ModuleBGM.BGMDevice",
+                    "usr": "c:@M@ModuleBGM@E@BGMDevice"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ModuleBGM.BGMDevice.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BGMDevice",
+                        "printedName": "ModuleBGM.BGMDevice",
+                        "usr": "c:@M@ModuleBGM@E@BGMDevice"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ModuleBGM@E@BGMDevice@BGMDeviceISens",
+            "mangledName": "$s9ModuleBGM9BGMDeviceO5iSensyA2CmF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "bBraun",
+            "printedName": "bBraun",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ModuleBGM.BGMDevice.Type) -> ModuleBGM.BGMDevice",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BGMDevice",
+                    "printedName": "ModuleBGM.BGMDevice",
+                    "usr": "c:@M@ModuleBGM@E@BGMDevice"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ModuleBGM.BGMDevice.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BGMDevice",
+                        "printedName": "ModuleBGM.BGMDevice",
+                        "usr": "c:@M@ModuleBGM@E@BGMDevice"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ModuleBGM@E@BGMDevice@BGMDeviceBBraun",
+            "mangledName": "$s9ModuleBGM9BGMDeviceO6bBraunyA2CmF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "rocheAccuChek",
+            "printedName": "rocheAccuChek",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(ModuleBGM.BGMDevice.Type) -> ModuleBGM.BGMDevice",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BGMDevice",
+                    "printedName": "ModuleBGM.BGMDevice",
+                    "usr": "c:@M@ModuleBGM@E@BGMDevice"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "ModuleBGM.BGMDevice.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BGMDevice",
+                        "printedName": "ModuleBGM.BGMDevice",
+                        "usr": "c:@M@ModuleBGM@E@BGMDevice"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@ModuleBGM@E@BGMDevice@BGMDeviceRocheAccuChek",
+            "mangledName": "$s9ModuleBGM9BGMDeviceO13rocheAccuChekyA2CmF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "string",
+            "printedName": "string",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM9BGMDeviceO6stringSSvp",
+            "mangledName": "$s9ModuleBGM9BGMDeviceO6stringSSvp",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM9BGMDeviceO6stringSSvg",
+                "mangledName": "$s9ModuleBGM9BGMDeviceO6stringSSvg",
+                "moduleName": "ModuleBGM",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ModuleBGM.BGMDevice?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BGMDevice",
+                    "printedName": "ModuleBGM.BGMDevice",
+                    "usr": "c:@M@ModuleBGM@E@BGMDevice"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9ModuleBGM9BGMDeviceO8rawValueACSgSi_tcfc",
+            "mangledName": "$s9ModuleBGM9BGMDeviceO8rawValueACSgSi_tcfc",
+            "moduleName": "ModuleBGM",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM9BGMDeviceO8rawValueSivp",
+            "mangledName": "$s9ModuleBGM9BGMDeviceO8rawValueSivp",
+            "moduleName": "ModuleBGM",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM9BGMDeviceO8rawValueSivg",
+                "mangledName": "$s9ModuleBGM9BGMDeviceO8rawValueSivg",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ModuleBGM.BGMDevice]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BGMDevice",
+                    "printedName": "ModuleBGM.BGMDevice",
+                    "usr": "c:@M@ModuleBGM@E@BGMDevice"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM9BGMDeviceO8allCasesSayACGvpZ",
+            "mangledName": "$s9ModuleBGM9BGMDeviceO8allCasesSayACGvpZ",
+            "moduleName": "ModuleBGM",
+            "static": true,
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[ModuleBGM.BGMDevice]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BGMDevice",
+                        "printedName": "ModuleBGM.BGMDevice",
+                        "usr": "c:@M@ModuleBGM@E@BGMDevice"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM9BGMDeviceO8allCasesSayACGvgZ",
+                "mangledName": "$s9ModuleBGM9BGMDeviceO8allCasesSayACGvgZ",
+                "moduleName": "ModuleBGM",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@ModuleBGM@E@BGMDevice",
+        "mangledName": "$s9ModuleBGM9BGMDeviceO",
+        "moduleName": "ModuleBGM",
+        "objc_name": "BGMDevice",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[ModuleBGM.BGMDevice]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BGMDevice",
+                        "printedName": "ModuleBGM.BGMDevice",
+                        "usr": "c:@M@ModuleBGM@E@BGMDevice"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ModuleCommons",
+        "printedName": "ModuleCommons",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BGMNetworkHandlerProtocol",
+        "printedName": "BGMNetworkHandlerProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "upload",
+            "printedName": "upload(for:values:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "ModuleCommons.Source",
+                "usr": "c:@M@ModuleCommons@E@Source"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ModuleCommons.EpochValue]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EpochValue",
+                    "printedName": "ModuleCommons.EpochValue",
+                    "usr": "s:13ModuleCommons10EpochValueV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM25BGMNetworkHandlerProtocolP6upload3for6valuesy0A7Commons6SourceO_SayAG10EpochValueVGtF",
+            "mangledName": "$s9ModuleBGM25BGMNetworkHandlerProtocolP6upload3for6valuesy0A7Commons6SourceO_SayAG10EpochValueVGtF",
+            "moduleName": "ModuleBGM",
+            "genericSig": "<τ_0_0 where τ_0_0 : ModuleBGM.BGMNetworkHandlerProtocol>",
+            "sugared_genericSig": "<Self where Self : ModuleBGM.BGMNetworkHandlerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLastUpload",
+            "printedName": "getLastUpload(source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "ModuleCommons.Source",
+                "usr": "c:@M@ModuleCommons@E@Source"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM25BGMNetworkHandlerProtocolP13getLastUpload6source10Foundation4DateV0A7Commons6SourceO_tF",
+            "mangledName": "$s9ModuleBGM25BGMNetworkHandlerProtocolP13getLastUpload6source10Foundation4DateV0A7Commons6SourceO_tF",
+            "moduleName": "ModuleBGM",
+            "genericSig": "<τ_0_0 where τ_0_0 : ModuleBGM.BGMNetworkHandlerProtocol>",
+            "sugared_genericSig": "<Self where Self : ModuleBGM.BGMNetworkHandlerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(lastUpload:source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "ModuleCommons.Source",
+                "usr": "c:@M@ModuleCommons@E@Source"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM25BGMNetworkHandlerProtocolP3set10lastUpload6sourcey10Foundation4DateV_0A7Commons6SourceOtF",
+            "mangledName": "$s9ModuleBGM25BGMNetworkHandlerProtocolP3set10lastUpload6sourcey10Foundation4DateV_0A7Commons6SourceOtF",
+            "moduleName": "ModuleBGM",
+            "genericSig": "<τ_0_0 where τ_0_0 : ModuleBGM.BGMNetworkHandlerProtocol>",
+            "sugared_genericSig": "<Self where Self : ModuleBGM.BGMNetworkHandlerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9ModuleBGM25BGMNetworkHandlerProtocolP",
+        "mangledName": "$s9ModuleBGM25BGMNetworkHandlerProtocolP",
+        "moduleName": "ModuleBGM"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BLEDelegate",
+        "printedName": "BLEDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "ble",
+            "printedName": "ble(isActivated:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ModuleBGM@objc(pl)BLEDelegate(im)bleWithIsActivated:",
+            "mangledName": "$s9ModuleBGM11BLEDelegateP3ble11isActivatedySb_tF",
+            "moduleName": "ModuleBGM",
+            "genericSig": "<τ_0_0 where τ_0_0 : ModuleBGM.BLEDelegate>",
+            "sugared_genericSig": "<Self where Self : ModuleBGM.BLEDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ble",
+            "printedName": "ble(didFound:rssi:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ModuleBGM@objc(pl)BLEDelegate(im)bleWithDidFound:rssi:",
+            "mangledName": "$s9ModuleBGM11BLEDelegateP3ble8didFound4rssiySo12CBPeripheralC_SitF",
+            "moduleName": "ModuleBGM",
+            "genericSig": "<τ_0_0 where τ_0_0 : ModuleBGM.BLEDelegate>",
+            "sugared_genericSig": "<Self where Self : ModuleBGM.BLEDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ble",
+            "printedName": "ble(didPaired:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ModuleBGM@objc(pl)BLEDelegate(im)bleWithDidPaired:error:",
+            "mangledName": "$s9ModuleBGM11BLEDelegateP3ble9didPaired5errorySo12CBPeripheralC_s5Error_pSgtF",
+            "moduleName": "ModuleBGM",
+            "genericSig": "<τ_0_0 where τ_0_0 : ModuleBGM.BLEDelegate>",
+            "sugared_genericSig": "<Self where Self : ModuleBGM.BLEDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ble",
+            "printedName": "ble(ready:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBCharacteristic",
+                "printedName": "CoreBluetooth.CBCharacteristic",
+                "usr": "c:objc(cs)CBCharacteristic"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ModuleBGM@objc(pl)BLEDelegate(im)bleWithReady:",
+            "mangledName": "$s9ModuleBGM11BLEDelegateP3ble5readyySo16CBCharacteristicC_tF",
+            "moduleName": "ModuleBGM",
+            "genericSig": "<τ_0_0 where τ_0_0 : ModuleBGM.BLEDelegate>",
+            "sugared_genericSig": "<Self where Self : ModuleBGM.BLEDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ble",
+            "printedName": "ble(didDisconnect:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CBPeripheral",
+                "printedName": "CoreBluetooth.CBPeripheral",
+                "usr": "c:objc(cs)CBPeripheral"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Error?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ModuleBGM@objc(pl)BLEDelegate(im)bleWithDidDisconnect:error:",
+            "mangledName": "$s9ModuleBGM11BLEDelegateP3ble13didDisconnect5errorySo12CBPeripheralC_s5Error_pSgtF",
+            "moduleName": "ModuleBGM",
+            "genericSig": "<τ_0_0 where τ_0_0 : ModuleBGM.BLEDelegate>",
+            "sugared_genericSig": "<Self where Self : ModuleBGM.BLEDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@ModuleBGM@objc(pl)BLEDelegate",
+        "mangledName": "$s9ModuleBGM11BLEDelegateP",
+        "moduleName": "ModuleBGM",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BGMData",
+        "printedName": "BGMData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "measurementValue",
+            "printedName": "measurementValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM7BGMDataV16measurementValueSaySiGvp",
+            "mangledName": "$s9ModuleBGM7BGMDataV16measurementValueSaySiGvp",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM7BGMDataV16measurementValueSaySiGvg",
+                "mangledName": "$s9ModuleBGM7BGMDataV16measurementValueSaySiGvg",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM7BGMDataV16measurementValueSaySiGvs",
+                "mangledName": "$s9ModuleBGM7BGMDataV16measurementValueSaySiGvs",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM7BGMDataV16measurementValueSaySiGvM",
+                "mangledName": "$s9ModuleBGM7BGMDataV16measurementValueSaySiGvM",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "contextValue",
+            "printedName": "contextValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM7BGMDataV12contextValueSaySiGvp",
+            "mangledName": "$s9ModuleBGM7BGMDataV12contextValueSaySiGvp",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM7BGMDataV12contextValueSaySiGvg",
+                "mangledName": "$s9ModuleBGM7BGMDataV12contextValueSaySiGvg",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM7BGMDataV12contextValueSaySiGvs",
+                "mangledName": "$s9ModuleBGM7BGMDataV12contextValueSaySiGvs",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM7BGMDataV12contextValueSaySiGvM",
+                "mangledName": "$s9ModuleBGM7BGMDataV12contextValueSaySiGvM",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "device",
+            "printedName": "device",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BGMDevice",
+                "printedName": "ModuleBGM.BGMDevice",
+                "usr": "c:@M@ModuleBGM@E@BGMDevice"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM7BGMDataV6deviceAA9BGMDeviceOvp",
+            "mangledName": "$s9ModuleBGM7BGMDataV6deviceAA9BGMDeviceOvp",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BGMDevice",
+                    "printedName": "ModuleBGM.BGMDevice",
+                    "usr": "c:@M@ModuleBGM@E@BGMDevice"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM7BGMDataV6deviceAA9BGMDeviceOvg",
+                "mangledName": "$s9ModuleBGM7BGMDataV6deviceAA9BGMDeviceOvg",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BGMDevice",
+                    "printedName": "ModuleBGM.BGMDevice",
+                    "usr": "c:@M@ModuleBGM@E@BGMDevice"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM7BGMDataV6deviceAA9BGMDeviceOvs",
+                "mangledName": "$s9ModuleBGM7BGMDataV6deviceAA9BGMDeviceOvs",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM7BGMDataV6deviceAA9BGMDeviceOvM",
+                "mangledName": "$s9ModuleBGM7BGMDataV6deviceAA9BGMDeviceOvM",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BGMData",
+                "printedName": "ModuleBGM.BGMData",
+                "usr": "s:9ModuleBGM7BGMDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BGMDevice",
+                "printedName": "ModuleBGM.BGMDevice",
+                "usr": "c:@M@ModuleBGM@E@BGMDevice"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9ModuleBGM7BGMDataVyAcA9BGMDeviceOcfc",
+            "mangledName": "$s9ModuleBGM7BGMDataVyAcA9BGMDeviceOcfc",
+            "moduleName": "ModuleBGM",
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9ModuleBGM7BGMDataV",
+        "mangledName": "$s9ModuleBGM7BGMDataV",
+        "moduleName": "ModuleBGM"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BGMParser",
+        "printedName": "BGMParser",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "glucoseUnitConversionMultiplier",
+            "printedName": "glucoseUnitConversionMultiplier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM9BGMParserC31glucoseUnitConversionMultiplier33_5EDC4044835C7FF921307005B54A1CC2LLSfvp",
+            "mangledName": "$s9ModuleBGM9BGMParserC31glucoseUnitConversionMultiplier33_5EDC4044835C7FF921307005B54A1CC2LLSfvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "newRecord",
+            "printedName": "newRecord",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BGMData",
+                "printedName": "ModuleBGM.BGMData",
+                "usr": "s:9ModuleBGM7BGMDataV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM9BGMParserC9newRecord33_5EDC4044835C7FF921307005B54A1CC2LLAA7BGMDataVvp",
+            "mangledName": "$s9ModuleBGM9BGMParserC9newRecord33_5EDC4044835C7FF921307005B54A1CC2LLAA7BGMDataVvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BGMParser",
+                "printedName": "ModuleBGM.BGMParser",
+                "usr": "s:9ModuleBGM9BGMParserC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BGMData",
+                "printedName": "ModuleBGM.BGMData",
+                "usr": "s:9ModuleBGM7BGMDataV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9ModuleBGM9BGMParserCyAcA7BGMDataVcfc",
+            "mangledName": "$s9ModuleBGM9BGMParserCyAcA7BGMDataVcfc",
+            "moduleName": "ModuleBGM",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getDate",
+            "printedName": "getDate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM9BGMParserC7getDate10Foundation0E0VSgyF",
+            "mangledName": "$s9ModuleBGM9BGMParserC7getDate10Foundation0E0VSgyF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getGlucoseValue",
+            "printedName": "getGlucoseValue()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM9BGMParserC15getGlucoseValueSfyF",
+            "mangledName": "$s9ModuleBGM9BGMParserC15getGlucoseValueSfyF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getGlucoseMgL",
+            "printedName": "getGlucoseMgL(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM9BGMParserC13getGlucoseMgLyS2fF",
+            "mangledName": "$s9ModuleBGM9BGMParserC13getGlucoseMgLyS2fF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getGlucoseMmolL",
+            "printedName": "getGlucoseMmolL(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM9BGMParserC15getGlucoseMmolLySdSfF",
+            "mangledName": "$s9ModuleBGM9BGMParserC15getGlucoseMmolLySdSfF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getMantissa",
+            "printedName": "getMantissa()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM9BGMParserC11getMantissaSiyF",
+            "mangledName": "$s9ModuleBGM9BGMParserC11getMantissaSiyF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTimeOffsetSeconds",
+            "printedName": "getTimeOffsetSeconds()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM9BGMParserC20getTimeOffsetSecondsSiyF",
+            "mangledName": "$s9ModuleBGM9BGMParserC20getTimeOffsetSecondsSiyF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getGlucoseUnits",
+            "printedName": "getGlucoseUnits()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM9BGMParserC15getGlucoseUnitsSSyF",
+            "mangledName": "$s9ModuleBGM9BGMParserC15getGlucoseUnitsSSyF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSampleLocation",
+            "printedName": "getSampleLocation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM9BGMParserC17getSampleLocationSSyF",
+            "mangledName": "$s9ModuleBGM9BGMParserC17getSampleLocationSSyF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSampleType",
+            "printedName": "getSampleType()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM9BGMParserC13getSampleTypeSSyF",
+            "mangledName": "$s9ModuleBGM9BGMParserC13getSampleTypeSSyF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getMealInfo",
+            "printedName": "getMealInfo()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM9BGMParserC11getMealInfoSSyF",
+            "mangledName": "$s9ModuleBGM9BGMParserC11getMealInfoSSyF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9ModuleBGM9BGMParserC",
+        "mangledName": "$s9ModuleBGM9BGMParserC",
+        "moduleName": "ModuleBGM",
+        "declAttributes": [
+          "Final"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ModuleCommons",
+        "printedName": "ModuleCommons",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BGMNetworkHandler",
+        "printedName": "BGMNetworkHandler",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "networkClient",
+            "printedName": "networkClient",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkClient",
+                "printedName": "CoreSDK.NetworkClient",
+                "usr": "c:@M@CoreSDK@objc(cs)NetworkClient"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM17BGMNetworkHandlerC13networkClient7CoreSDK07NetworkF0Cvp",
+            "mangledName": "$s9ModuleBGM17BGMNetworkHandlerC13networkClient7CoreSDK07NetworkF0Cvp",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkClient",
+                    "printedName": "CoreSDK.NetworkClient",
+                    "usr": "c:@M@CoreSDK@objc(cs)NetworkClient"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9ModuleBGM17BGMNetworkHandlerC13networkClient7CoreSDK07NetworkF0Cvg",
+                "mangledName": "$s9ModuleBGM17BGMNetworkHandlerC13networkClient7CoreSDK07NetworkF0Cvg",
+                "moduleName": "ModuleBGM",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent",
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BGMNetworkHandler",
+                "printedName": "ModuleBGM.BGMNetworkHandler",
+                "usr": "s:9ModuleBGM17BGMNetworkHandlerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkClient",
+                "printedName": "CoreSDK.NetworkClient",
+                "usr": "c:@M@CoreSDK@objc(cs)NetworkClient"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9ModuleBGM17BGMNetworkHandlerCyAC7CoreSDK13NetworkClientCcfc",
+            "mangledName": "$s9ModuleBGM17BGMNetworkHandlerCyAC7CoreSDK13NetworkClientCcfc",
+            "moduleName": "ModuleBGM",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "upload",
+            "printedName": "upload(for:values:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "ModuleCommons.Source",
+                "usr": "c:@M@ModuleCommons@E@Source"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ModuleCommons.EpochValue]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "EpochValue",
+                    "printedName": "ModuleCommons.EpochValue",
+                    "usr": "s:13ModuleCommons10EpochValueV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM17BGMNetworkHandlerC6upload3for6valuesy0A7Commons6SourceO_SayAG10EpochValueVGtF",
+            "mangledName": "$s9ModuleBGM17BGMNetworkHandlerC6upload3for6valuesy0A7Commons6SourceO_SayAG10EpochValueVGtF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLastUpload",
+            "printedName": "getLastUpload(source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "ModuleCommons.Source",
+                "usr": "c:@M@ModuleCommons@E@Source"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM17BGMNetworkHandlerC13getLastUpload6source10Foundation4DateV0A7Commons6SourceO_tF",
+            "mangledName": "$s9ModuleBGM17BGMNetworkHandlerC13getLastUpload6source10Foundation4DateV0A7Commons6SourceO_tF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(lastUpload:source:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Source",
+                "printedName": "ModuleCommons.Source",
+                "usr": "c:@M@ModuleCommons@E@Source"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM17BGMNetworkHandlerC3set10lastUpload6sourcey10Foundation4DateV_0A7Commons6SourceOtF",
+            "mangledName": "$s9ModuleBGM17BGMNetworkHandlerC3set10lastUpload6sourcey10Foundation4DateV_0A7Commons6SourceOtF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9ModuleBGM17BGMNetworkHandlerC",
+        "mangledName": "$s9ModuleBGM17BGMNetworkHandlerC",
+        "moduleName": "ModuleBGM",
+        "declAttributes": [
+          "Final"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "BGMNetworkHandlerProtocol",
+            "printedName": "BGMNetworkHandlerProtocol",
+            "usr": "s:9ModuleBGM25BGMNetworkHandlerProtocolP",
+            "mangledName": "$s9ModuleBGM25BGMNetworkHandlerProtocolP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ModuleCommons",
+        "printedName": "ModuleCommons",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreSDK",
+        "printedName": "CoreSDK",
+        "declKind": "Import",
+        "moduleName": "ModuleBGM"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BGMRecordReporter",
+        "printedName": "BGMRecordReporter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "networkHandler",
+            "printedName": "networkHandler",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BGMNetworkHandler",
+                "printedName": "ModuleBGM.BGMNetworkHandler",
+                "usr": "s:9ModuleBGM17BGMNetworkHandlerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9ModuleBGM17BGMRecordReporterC14networkHandler33_D3963EB4A535BF7B661BE9A2870F20A5LLAA010BGMNetworkF0Cvp",
+            "mangledName": "$s9ModuleBGM17BGMRecordReporterC14networkHandler33_D3963EB4A535BF7B661BE9A2870F20A5LLAA010BGMNetworkF0Cvp",
+            "moduleName": "ModuleBGM",
+            "isInternal": true,
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BGMRecordReporter",
+                "printedName": "ModuleBGM.BGMRecordReporter",
+                "usr": "s:9ModuleBGM17BGMRecordReporterC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BGMNetworkHandler",
+                "printedName": "ModuleBGM.BGMNetworkHandler",
+                "usr": "s:9ModuleBGM17BGMNetworkHandlerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9ModuleBGM17BGMRecordReporterCyAcA17BGMNetworkHandlerCcfc",
+            "mangledName": "$s9ModuleBGM17BGMRecordReporterCyAcA17BGMNetworkHandlerCcfc",
+            "moduleName": "ModuleBGM",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "record",
+            "printedName": "record(_:device:completionHandlder:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[ModuleBGM.BGMData]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BGMData",
+                    "printedName": "ModuleBGM.BGMData",
+                    "usr": "s:9ModuleBGM7BGMDataV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ModuleBGM.BGMDevice?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BGMDevice",
+                    "printedName": "ModuleBGM.BGMDevice",
+                    "usr": "c:@M@ModuleBGM@E@BGMDevice"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "ModuleBGM.SourceError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SourceError",
+                    "printedName": "ModuleBGM.SourceError",
+                    "usr": "s:9ModuleBGM11SourceErrorO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9ModuleBGM17BGMRecordReporterC6record_6device18completionHandlder5errorySayAA7BGMDataVG_AA9BGMDeviceOSgyyXEAA11SourceErrorOSgtF",
+            "mangledName": "$s9ModuleBGM17BGMRecordReporterC6record_6device18completionHandlder5errorySayAA7BGMDataVG_AA9BGMDeviceOSgyyXEAA11SourceErrorOSgtF",
+            "moduleName": "ModuleBGM",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9ModuleBGM17BGMRecordReporterC",
+        "mangledName": "$s9ModuleBGM17BGMRecordReporterC",
+        "moduleName": "ModuleBGM",
+        "declAttributes": [
+          "Final"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "BGMRecordDelegate",
+            "printedName": "BGMRecordDelegate",
+            "usr": "s:9ModuleBGM17BGMRecordDelegateP",
+            "mangledName": "$s9ModuleBGM17BGMRecordDelegateP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "StringLiteral",
+      "offset": 305,
+      "length": 13,
+      "value": "\"iSensPaired\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "StringLiteral",
+      "offset": 341,
+      "length": 14,
+      "value": "\"bBraunPaired\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "StringLiteral",
+      "offset": 377,
+      "length": 13,
+      "value": "\"rochePaired\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "StringLiteral",
+      "offset": 305,
+      "length": 13,
+      "value": "\"iSensPaired\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "StringLiteral",
+      "offset": 341,
+      "length": 14,
+      "value": "\"bBraunPaired\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "StringLiteral",
+      "offset": 377,
+      "length": 13,
+      "value": "\"rochePaired\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "Array",
+      "offset": 566,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "BooleanLiteral",
+      "offset": 734,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "StringLiteral",
+      "offset": 797,
+      "length": 6,
+      "value": "\"180A\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "StringLiteral",
+      "offset": 859,
+      "length": 6,
+      "value": "\"1808\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "StringLiteral",
+      "offset": 939,
+      "length": 6,
+      "value": "\"2A18\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "StringLiteral",
+      "offset": 1026,
+      "length": 6,
+      "value": "\"2A34\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "StringLiteral",
+      "offset": 1102,
+      "length": 6,
+      "value": "\"2A51\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "StringLiteral",
+      "offset": 1188,
+      "length": 6,
+      "value": "\"2A52\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "StringLiteral",
+      "offset": 1266,
+      "length": 6,
+      "value": "\"2A29\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "StringLiteral",
+      "offset": 1336,
+      "length": 6,
+      "value": "\"2A08\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "StringLiteral",
+      "offset": 1427,
+      "length": 6,
+      "value": "\"2902\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BLE\/BLEContext.swift",
+      "kind": "StringLiteral",
+      "offset": 229,
+      "length": 10,
+      "value": "\"ModuleBGM.BLEContext\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/Configs\/BGMErrors.swift",
+      "kind": "StringLiteral",
+      "offset": 226,
+      "length": 64,
+      "value": "\"A manufacturer information was not parsed. No BGM value saved.\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/BGMConnector.swift",
+      "kind": "StringLiteral",
+      "offset": 348,
+      "length": 12,
+      "value": "\"ModuleBGM.BGMConnector\""
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/Model\/BGMDevice.swift",
+      "kind": "IntegerLiteral",
+      "offset": 315,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/Model\/BGMDevice.swift",
+      "kind": "IntegerLiteral",
+      "offset": 326,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/Model\/BGMDevice.swift",
+      "kind": "IntegerLiteral",
+      "offset": 342,
+      "length": 13,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/Model\/BGMDevice.swift",
+      "kind": "IntegerLiteral",
+      "offset": 315,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/Model\/BGMDevice.swift",
+      "kind": "IntegerLiteral",
+      "offset": 326,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/Model\/BGMDevice.swift",
+      "kind": "IntegerLiteral",
+      "offset": 342,
+      "length": 13,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/Model\/BGMData.swift",
+      "kind": "Array",
+      "offset": 208,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/Model\/BGMData.swift",
+      "kind": "Array",
+      "offset": 241,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/pessoa\/Documents\/git\/ios_ThryveConnector\/ModuleBGM\/Parser\/BGMParser.swift",
+      "kind": "IntegerLiteral",
+      "offset": 319,
+      "length": 5,
+      "value": "18016"
+    }
+  ]
+}

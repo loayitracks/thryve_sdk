@@ -1,0 +1,179 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ModuleAppleHealth
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import BackgroundTasks
+import CoreSDK
+import Foundation
+import HealthKit
+@_exported import ModuleAppleHealth
+import ModuleCommons
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+@_inheritsConvenienceInitializers @objc(HKConnectorType) final public class HKConnectorType : ObjectiveC.NSObject {
+  @objc public static let dateOfBirth: HealthKit.HKCharacteristicType
+  @objc public static let bloodType: HealthKit.HKCharacteristicType
+  @objc public static let biologicalSex: HealthKit.HKCharacteristicType
+  @available(iOS 13.0, *)
+  @objc public static let heartbeatSeries: HealthKit.HKSeriesType
+  @objc public static let heartRateVariabilitySDNN: HealthKit.HKQuantityType
+  @objc public static let bodyMassIndex: HealthKit.HKQuantityType
+  @objc public static let bodyFatPercentage: HealthKit.HKQuantityType
+  @objc public static let heartRate: HealthKit.HKQuantityType
+  @objc public static let respiratoryRate: HealthKit.HKQuantityType
+  @objc public static let oxygenSaturation: HealthKit.HKQuantityType
+  @objc public static let bodyTemperature: HealthKit.HKQuantityType
+  @objc public static let basalBodyTemperature: HealthKit.HKQuantityType
+  @objc public static let bloodPressureSystolic: HealthKit.HKQuantityType
+  @objc public static let bloodPressureDiastolic: HealthKit.HKQuantityType
+  @objc public static let bloodGlucose: HealthKit.HKQuantityType
+  @objc public static let height: HealthKit.HKQuantityType
+  @objc public static let bodyMass: HealthKit.HKQuantityType
+  @objc public static let restingHeartRate: HealthKit.HKQuantityType
+  @objc public static let vo2Max: HealthKit.HKQuantityType
+  @objc public static let waistCircumference: HealthKit.HKQuantityType
+  @objc public static let stepCount: HealthKit.HKQuantityType
+  @objc public static let distanceSwimming: HealthKit.HKQuantityType
+  @objc public static let distanceWalkingRunning: HealthKit.HKQuantityType
+  @objc public static let distanceCycling: HealthKit.HKQuantityType
+  @objc public static let basalEnergyBurned: HealthKit.HKQuantityType
+  @objc public static let activeEnergyBurned: HealthKit.HKQuantityType
+  @objc public static let flightsClimbed: HealthKit.HKQuantityType
+  @objc public static let appleExerciseTime: HealthKit.HKQuantityType
+  @objc public static let dietaryEnergyConsumed: HealthKit.HKQuantityType
+  @objc public static let dietaryCarbohydrates: HealthKit.HKQuantityType
+  @objc public static let dietaryFiber: HealthKit.HKQuantityType
+  @objc public static let dietarySugar: HealthKit.HKQuantityType
+  @objc public static let dietaryFatTotal: HealthKit.HKQuantityType
+  @objc public static let dietaryFatSaturated: HealthKit.HKQuantityType
+  @objc public static let dietaryProtein: HealthKit.HKQuantityType
+  @objc public static let dietaryVitaminA: HealthKit.HKQuantityType
+  @objc public static let dietaryThiamin: HealthKit.HKQuantityType
+  @objc public static let dietaryRiboflavin: HealthKit.HKQuantityType
+  @objc public static let dietaryNiacin: HealthKit.HKQuantityType
+  @objc public static let dietaryPantothenicAcid: HealthKit.HKQuantityType
+  @objc public static let dietaryVitaminB6: HealthKit.HKQuantityType
+  @objc public static let dietaryVitaminB12: HealthKit.HKQuantityType
+  @objc public static let dietaryVitaminC: HealthKit.HKQuantityType
+  @objc public static let dietaryVitaminD: HealthKit.HKQuantityType
+  @objc public static let dietaryVitaminE: HealthKit.HKQuantityType
+  @objc public static let dietaryVitaminK: HealthKit.HKQuantityType
+  @objc public static let dietaryFolate: HealthKit.HKQuantityType
+  @objc public static let dietaryCalcium: HealthKit.HKQuantityType
+  @objc public static let dietaryIron: HealthKit.HKQuantityType
+  @objc public static let dietaryMagnesium: HealthKit.HKQuantityType
+  @objc public static let dietaryPhosphorus: HealthKit.HKQuantityType
+  @objc public static let dietaryPotassium: HealthKit.HKQuantityType
+  @objc public static let dietarySodium: HealthKit.HKQuantityType
+  @objc public static let dietaryZinc: HealthKit.HKQuantityType
+  @objc public static let dietaryIodine: HealthKit.HKQuantityType
+  @objc public static let dietaryManganese: HealthKit.HKQuantityType
+  @objc public static let electrodermalActivity: HealthKit.HKQuantityType
+  @objc public static let dietaryWater: HealthKit.HKQuantityType
+  @available(iOS 13.0, *)
+  @objc public static let environmentalAudioExposure: HealthKit.HKQuantityType
+  @available(iOS 13.0, *)
+  @objc public static let headphoneAudioExposure: HealthKit.HKQuantityType
+  @objc public static let sleepAnalysis: HealthKit.HKCategoryType
+  @objc public static let mindfulSession: HealthKit.HKCategoryType
+  @objc public static let appleStandHour: HealthKit.HKCategoryType
+  @objc public static let sexualActivity: HealthKit.HKCategoryType
+  @objc public static let intermenstrualBleeding: HealthKit.HKCategoryType
+  @objc public static let menstrualFlow: HealthKit.HKCategoryType
+  @objc public static let ovulationTestResult: HealthKit.HKCategoryType
+  @objc public static let cervicalMucusQuality: HealthKit.HKCategoryType
+  @available(iOS 13.0, *)
+  @objc public static let audioExposureEvent: HealthKit.HKCategoryType
+  @objc public static let activitySummary: HealthKit.HKActivitySummaryType
+  @objc public static let workoutType: HealthKit.HKWorkoutType
+  @available(iOS 14.0, *)
+  @objc public static let electrocardiogramType: HealthKit.HKElectrocardiogramType
+  @available(iOS 13.6, *)
+  @objc public static let rapidPoundingOrFlutteringHeartbeat: HealthKit.HKCategoryType
+  @available(iOS 13.6, *)
+  @objc public static let skippedHeartbeat: HealthKit.HKCategoryType
+  @available(iOS 13.6, *)
+  @objc public static let fatigue: HealthKit.HKCategoryType
+  @available(iOS 13.6, *)
+  @objc public static let shortnessOfBreath: HealthKit.HKCategoryType
+  @available(iOS 13.6, *)
+  @objc public static let chestTightnessOrPain: HealthKit.HKCategoryType
+  @available(iOS 13.6, *)
+  @objc public static let fainting: HealthKit.HKCategoryType
+  @available(iOS 13.6, *)
+  @objc public static let dizziness: HealthKit.HKCategoryType
+  @objc public static var allTypes: Swift.Set<HealthKit.HKObjectType> {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum HKModuleError : Swift.Int {
+  case HK_INITIALIZATION_ERROR
+  case HK_AUTH_REQUEST_FAILED
+  case HK_CONNECTION_DISABLED
+  case HK_NOT_SUPPORTED
+  case HK_TYPES_EMPTY
+  case HK_SYNC_START_AFTER_NOW
+  case HK_SYNC_END_AFTER_NOW
+  case HK_SYNC_END_BEFORE_START
+  case HK_SYNC_DAILY_UPLOAD_FAILED
+  case HK_SYNC_EPOCH_UPLOAD_FAILED
+  case HK_MANAGER_INSTANCE_LOST
+  case HK_START_FAILED
+  case HK_STOP_FAILED
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias AccessRequestCallback = (CoreSDK.ThryveResponse<Swift.Bool?>) -> Swift.Void
+@objc @_inheritsConvenienceInitializers public class HealthKitManager : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  public func requestAuthorisationFor(types: Swift.Set<HealthKit.HKObjectType>, completion: @escaping ModuleAppleHealth.AccessRequestCallback)
+  public func enableAppleSource(callback: @escaping (CoreSDK.ThryveResponse<Swift.Bool?>) -> Swift.Void)
+  public func disableAppleSource()
+  public func enableBackgroundDeliveryFor(types: Swift.Set<HealthKit.HKObjectType>, shouldObserve: Swift.Bool, completion: @escaping ModuleAppleHealth.AccessRequestCallback)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(HKConnector) final public class HKConnector : ObjectiveC.NSObject {
+  @objc(Service) public enum Service : Swift.Int {
+    case healthKit = 4
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc final public var isHealthKitAvailable: Swift.Bool {
+    @objc get
+  }
+  @objc override dynamic public init()
+  final public func enableBackgroundDeliveryFor(types: Swift.Set<HealthKit.HKObjectType>)
+  @objc deinit
+}
+extension ModuleAppleHealth.HKConnector {
+  final public func authorizeHealthKit(types: Swift.Set<HealthKit.HKObjectType>, completionHandler: @escaping (CoreSDK.ThryveResponse<Swift.Bool?>) -> Swift.Void)
+  final public func startHealthKitIntegration(types: Swift.Set<HealthKit.HKObjectType>, completionHandler: @escaping (CoreSDK.ThryveResponse<Swift.Bool?>) -> Swift.Void)
+  final public func stopHealthKitIntegration(completionHandler: @escaping (CoreSDK.ThryveResponse<Swift.Bool?>) -> Swift.Void)
+  final public func synchronizeEpoch(types: Swift.Set<HealthKit.HKObjectType>, completionHandler: @escaping (CoreSDK.ThryveResponse<Swift.Bool?>) -> Swift.Void)
+  final public func synchronizeEpoch(startDate: Foundation.Date, endDate: Foundation.Date, types: Swift.Set<HealthKit.HKObjectType>, completionHandler: @escaping (CoreSDK.ThryveResponse<Swift.Bool?>) -> Swift.Void)
+  final public func synchronizeDaily(types: Swift.Set<HealthKit.HKObjectType>, completionHandler: @escaping (CoreSDK.ThryveResponse<Swift.Bool?>) -> Swift.Void)
+  final public func synchronizeDaily(startDate: Foundation.Date, endDate: Foundation.Date, types: Swift.Set<HealthKit.HKObjectType>, completionHandler: @escaping (CoreSDK.ThryveResponse<Swift.Bool?>) -> Swift.Void)
+  final public func isEnabled(_ service: ModuleAppleHealth.HKConnector.Service) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class HKTypesManager {
+  public static func setTypes(types: Swift.Set<HealthKit.HKObjectType>)
+  public static func getTypes() -> Swift.Set<HealthKit.HKObjectType>
+  @objc deinit
+}
+extension ModuleAppleHealth.HKModuleError : Swift.Equatable {}
+extension ModuleAppleHealth.HKModuleError : Swift.Hashable {}
+extension ModuleAppleHealth.HKModuleError : Swift.RawRepresentable {}
+extension ModuleAppleHealth.HKConnector : ModuleCommons.CommonsProtocol {}
+extension ModuleAppleHealth.HKConnector.Service : Swift.Equatable {}
+extension ModuleAppleHealth.HKConnector.Service : Swift.Hashable {}
+extension ModuleAppleHealth.HKConnector.Service : Swift.RawRepresentable {}
