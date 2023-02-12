@@ -1,0 +1,84 @@
+<resources>
+
+    <string name="app_name">Thryve Sample</string>
+
+    <string name="logo_subtitle">ConnectorModule Sample App</string>
+
+    <string name="hint_partner_user_id">Type PartnerUserId here</string>
+
+    <string name="button_access_token">Generate Access Token</string>
+    <string name="button_set_access_token">Set Access Token</string>
+    <string name="button_data_source_url">Get Data Source URL</string>
+
+    <string name="button_direct_connection">Direct Connection</string>
+    <string name="button_direct_revoke">Direct Revoke</string>
+
+    <string name="direct_connection_result">Direct connection onResult\nDataSource: %1$d\nAccessToken: %2$s\nConnected: %3$b\nMessage: %4$s</string>
+    <string name="direct_revoke_result">Direct revoke onResult\nDataSource: %1$d\nAccessToken: %2$s\nConnected: %3$b\nMessage: %4$s</string>
+    <string name="direct_connection_error">Error when connecting dataSource %1$d for accessToken %2$s. Message: %3$s</string>
+    <string name="direct_connection_error_social">Warning: connecting dataSource %1$d for accessToken %2$s does not work reliably in WebView. Message: %3$s</string>
+    <string name="direct_revoke_error">Error when revoking dataSource %1$d for accessToken %2$s. Message: %3$s</string>
+
+    <string name="native_step_detection">Step Detection</string>
+
+    <string name="native_activity_recognition">Activity Recognition</string>
+
+    <string name="location_tracking_detailed">Location (Detailed)</string>
+    <string name="location_tracking_balanced">Location (Balanced)</string>
+
+    <string name="wellbeing_tracking">Wellbeing indicators tracking</string>
+
+    <string name="shealth_integration">Samsung Health integration</string>
+
+    <string name="auto_cookie_deletion">Cookie Auto-Delete</string>
+
+    <string name="button_back_channel_daily_dynamic">Upload DailyDynamic Value</string>
+    <string name="button_back_channel_constant_value">Upload Constant Value</string>
+    <string name="button_back_channel_user_info">Update User information</string>
+    <string name="button_back_channel_user_info_get">Get User information</string>
+
+    <string name="dialog_upload">Upload</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_value_hint">1234</string>
+    <string name="dialog_title">Back Channel</string>
+    <string name="dialog_invalid_text">Please provide a value</string>
+    <string name="dialog_upload_success">Upload successful!</string>
+    <string name="dialog_upload_error">Upload error</string>
+
+    <string name="dialog_text_daily_dynamic">Please select a type and add a value that will be
+        uploaded as a DailyDynamicValue to the Thryve backend. For Timestamp the current day will
+        be used. Existing values will be updated.</string>
+
+    <string name="dialog_text_constant_value">Please select a type and add a value that will be
+        uploaded as a ConstantValue to the Thryve backend. A timestamp is not needed.</string>
+
+    <string name="start_scan">Start scan</string>
+    <string name="stop_scan">Stop scan</string>
+    <string name="sync">Sync</string>
+    <string name="button_bgm">BGM</string>
+
+    <string name="start_recognition">Start recognition</string>
+    <string name="to_camera">To Camera HRV recognition</string>
+    <string name="stop_recognition">Stop recognition</string>
+    <string name="to_ble_list">To Bluetooth devices list</string>
+    <string name="title_activity_main">HRVActivity</string>
+    <string name="title_activity_bluetooth">BluetoothActivity</string>
+    <string name="refresh_device_list">Refresh device list</string>
+    <string name="scan_devices">Scan devices</string>
+    <string name="button_cardio">Cardio</string>
+
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="button_gfit">Google Fit Native</string>
+    <string name="button_gfit_connect">Connect Google Fit</string>
+    <string name="gfit_integration">Google Fit Native Integration</string>
+
+    <string name="button_gfit_daily_sync">GoogleFit Daily Sync (last 7 days)</string>
+    <string name="button_shealth_sync_daily">SHealth Sync Daily</string>
+
+    <string name="button_gfit_epoch_sync">GoogleFit Epoch Sync (last 7 days)</string>
+    <string name="button_shealth_sync_epoch">SHealth Sync Epoch</string>
+
+    <string name="button_gfit_allowed_permissions">GoogleFit Show allowed permissions</string>
+    <string name="button_shealth_allowed_permissions">SHealth Show allowed permissions</string>
+</resources>
