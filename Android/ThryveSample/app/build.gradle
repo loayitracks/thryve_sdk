@@ -6,7 +6,7 @@ android {
     compileSdkVersion 31
     buildToolsVersion "30.0.3"
     defaultConfig {
-        applicationId "com.thryve.connectorexample.dev"
+        applicationId "com.itracks.healthcare"
         minSdkVersion 23
         targetSdkVersion 31
         versionCode 49110000
