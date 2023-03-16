@@ -1,0 +1,115 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 31
+    buildToolsVersion "30.0.3"
+    defaultConfig {
+        applicationId "com.thryve.connectorexample.dev"
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionCode 49110000
+        versionName "4.9.11"
+        /**
+         * Specify your default signing config:
+        signingConfig signingConfigs.debug
+        */
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+    /**
+     * define the attributes of your signing config. necessary for Google fit SDK and samsung health SDK ( both use keystore sha1 pinning )
+    signingConfigs {
+        debug {
+            storeFile file('your_keystore_path.jks')
+            storePassword 'your_keystore_pass'
+            keyAlias 'your_key_alias'
+            keyPassword 'your_key_password'
+        }
+        release {
+             storeFile file('your_keystore_path.jks')
+             storePassword 'your_keystore_pass'
+             keyAlias 'your_key_alias'
+             keyPassword 'your_key_password'
+        }
+    }
+    */
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    kotlinOptions {
+        jvmTarget = 1.8
+    }
+
+    packagingOptions {
+        pickFirst "lib/armeabi/libsqlcipher.so"
+        pickFirst "lib/armeabi-v7a/libsqlcipher.so"
+        pickFirst "lib/arm64-v8a/libsqlcipher.so"
+        pickFirst "lib/x86/libsqlcipher.so"
+        pickFirst "lib/x86_64/libsqlcipher.so"
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+dependencies {
+    implementation fileTree(include: ["*.jar"], dir: "libs")
+    implementation "androidx.appcompat:appcompat:$appCompat"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintLayout"
+
+    //dependencies for recognition
+    implementation "com.google.android.gms:play-services-location:$playServicesLocation"
+    implementation "com.google.android.gms:play-services-wearable:$playServicesWearable"
+
+    // dependencies for network and others
+    implementation "com.google.code.gson:gson:$gson"
+    implementation "androidx.legacy:legacy-support-v4:$legacySupport"
+
+    implementation "io.reactivex.rxjava2:rxjava:$rxJava2"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxAndroid2"
+    implementation "io.reactivex.rxjava2:rxkotlin:$rxKotlin"
+
+    // dependencies for background sync (Google Fit, Samsung Health)
+    implementation "androidx.work:work-runtime:$work"
+    implementation "androidx.work:work-runtime-ktx:$work"
+    implementation "androidx.work:work-gcm:$work"
+
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle"
+    implementation "androidx.lifecycle:lifecycle-process:$lifecycle"
+
+    implementation "androidx.concurrent:concurrent-futures:$concurrentFutures"
+    implementation "androidx.concurrent:concurrent-futures-ktx:$concurrentFutures"
+
+    // dependencies for Google Fit
+    implementation "com.google.android.gms:play-services-auth:${playServicesAuth}"
+    implementation "com.google.android.gms:play-services-fitness:${playServicesFitness}"
+
+    // dependencies for internal database systems
+    implementation "androidx.room:room-runtime:$room"
+    implementation "androidx.room:room-ktx:$room"
+    implementation "androidx.annotation:annotation:$annotation"
+
+    // dependencies for encryption/auth mechanisms
+    implementation "net.zetetic:android-database-sqlcipher:$sqlCipher"
+    implementation "androidx.security:security-crypto:$crypto"
+
+    implementation "com.wdullaer:materialdatetimepicker:4.2.3"
+
+    implementation files("../../thryve_core_sdk_${sdkVersion}.aar")
+    implementation files("../../thryve_module_commons_${sdkVersion}.aar")
+    implementation files("../../thryve_module_recognition_${sdkVersion}.aar")
+    implementation files("../../thryve_module_shealth_${sdkVersion}.aar")
+    implementation files("../../thryve_module_bgm_${sdkVersion}.aar")
+    implementation files("../../thryve_module_cardio_${sdkVersion}.aar")
+    implementation files("../../thryve_module_gfit_${sdkVersion}.aar")
+}
